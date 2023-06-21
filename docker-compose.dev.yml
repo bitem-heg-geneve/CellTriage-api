@@ -1,0 +1,115 @@
+version: "3"
+services:
+  db:
+    image: postgres:14  # https://hub.docker.com/_/postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - app-db-data:/var/lib/postgresql/data/pgdata
+    env_file:
+      - ./compose/.env.dev
+    restart: always
+
+  api:
+    build:
+      # context: ./backend
+      context: .
+      # dockerfile: Dockerfile
+      dockerfile: ./compose/local/pytorch/Dockerfile
+    depends_on:
+      - db
+    restart: always
+    ports:
+      - "8001:8001"
+      - "5678:5678"
+    volumes:
+      - ./backend/app:/app
+      - ./backend/assets:/assets
+    env_file:
+      - ./compose/.env.dev
+    command:  /app/run.sh
+
+
+  redis:
+    image: redis:7.0.11-alpine
+    container_name: reddis
+    restart: always
+
+  
+  flower:
+    image: mher/flower
+    container_name: flower
+    command: celery flower # This will execute flower.
+    env_file:
+      - ./compose/.env.dev
+    # environment:
+    #   - CELERY_BROKER_URL=<broker-url>
+    #   - FLOWER_PORT=<port-you-want-to-use-for-flower>
+    # ports: - <flower-port>:<flower-port> # docker will expose this ports for flower
+    ports: 
+      - 5555:5555 # docker will expose this ports for flower
+    depends_on:
+      - redis
+      - db
+    restart: always
+
+  worker-ingress:
+    build:
+      context: .
+      dockerfile: ./compose/local/pytorch/Dockerfile
+    image: worker_ingress
+    # command: /start-worker-ingress
+    command: python -m debugpy --listen 0.0.0.0:5671 -m celery -A app.main.celery worker --loglevel=info -Q ingress --hostname=ingress@%h
+    volumes:
+      - ./backend/app:/app
+    ports:
+      - 5671:5671
+    env_file:
+      - ./compose/.env.dev
+    depends_on:
+      - redis
+      - db
+      - api
+    restart: always
+    deploy:
+      replicas: 1
+
+
+  worker-torch:
+    build:
+      context: .
+      dockerfile: ./compose/local/pytorch/Dockerfile
+    image: worker_torch
+    command: python -m debugpy --listen 0.0.0.0:5672 -m celery -A app.main.celery worker --loglevel=info -Q torch --hostname=torch@%h --pool=solo 
+    volumes:
+      - ./backend/app:/app
+    ports:
+      - 5672:5672
+    env_file:
+      - ./compose/.env.dev
+    environment:
+      - LOAD_NER_MODEL=TRUE
+    depends_on:
+      - redis
+      - db
+      - api
+    restart: always
+    ulimits:
+      stack: 67108864
+      memlock: -1
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: 1
+    #           capabilities: [gpu]
+      # replicas: 1
+    deploy:
+      replicas: 1
+    
+
+
+volumes:
+  app-db-data:
+

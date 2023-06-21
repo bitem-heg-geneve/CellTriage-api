@@ -1,0 +1,2714 @@
+,sorted_entity
+0,Chevron
+1,HSBC
+2,Nestlé
+3,Apple
+4,Volkswagen
+5,Citigroup
+6,Bristol Myers Squibb
+7,Pepsico
+8,Bank of America
+9,Coca Cola
+10,JP Morgan Chase
+11,Novartis
+12,BASF
+13,Morgan Stanley
+14,AstraZeneca
+15,Johnson & Johnson
+16,Carrefour
+17,Coca-Cola Europacific Partners
+18,Société Générale
+19,Roche
+20,Barclays
+21,Blackrock
+22,Dell Technologies
+23,Adidas
+24,Marks & Spencer
+25,Banco Santander
+26,Goldman Sachs
+27,ExxonMobil
+28,Pfizer
+29,Wells Fargo
+30,Hennes & Mauritz
+31,Abbvie
+32,BNP Paribas
+33,Mondelez International
+34,Reliance Industries
+35,Samsung Electronics
+36,Unilever
+37,ANZ
+38,Natwest Group
+39,Royal Dutch Shell
+40,Siemens
+41,Philip Morris International
+42,Bank Nova Scotia
+43,Nike
+44,Mastercard
+45,Estée Lauder Companies
+46,Allianz
+47,Sanofi
+48,Reckitt Benckiser
+49,UBS
+50,BMW
+51,Bank of Montreal
+52,Westpac Banking
+53,McDonald's
+54,Amgen
+55,Alibaba
+56,Alphabet
+57,Comcast
+58,Santos
+59,Mitsubishi Ufj Financial
+60,DuPont
+61,Credit Suisse Group
+62,Danone
+63,Duke Energy
+64,Ford Motor
+65,Credit Agricole
+66,Deutsche Bank
+67,Daimler
+68,Amazon
+69,Repsol
+70,General Motors
+71,Kraft Heinz
+72,Bayer
+73,Royal Bank of Canada
+74,CIBC
+75,Henkel
+76,Lukoil
+77,Dow
+78,Merck Kgaa
+79,Walmart
+80,Tyson Foods
+81,Procter & Gamble
+82,Hitachi
+83,Kroger
+84,British Petroleum
+85,Stellantis
+86,Cenovus Energy
+87,Heineken
+88,Tesla
+89,Standard Chartered
+90,State Street
+91,American Airlines
+92,Volvo
+93,British American Tobacco
+94,ENI
+95,Panasonic
+96,Itochu
+97,Schneider
+98,Boeing
+99,Cvs Health
+100,US Bancorp
+101,Verizon Communications
+102,Abbott Laboratories
+103,Conocophillips
+104,BBVA
+105,Microsoft
+106,Truist Financial Corp
+107,Sony
+108,Starbucks
+109,ICBC
+110,Commonwealth Bank of Australia
+111,Astellas Pharma
+112,Netflix
+113,Philips
+114,Charles Schwab
+115,Bank of China
+116,Lloyds Banking
+117,GlaxoSmithKline
+118,IBM
+119,Mitsubishi Chemical Holdings Corp
+120,Valero Energy
+121,Nissan Motor
+122,Accor
+123,Renault
+124,Chipotle
+125,Anglo American
+126,Intesa Sanpaolo
+127,TotalEnergies
+128,Toronto-Dominion Bank
+129,General Mills
+130,Airbus
+131,Barry Callebaut
+132,Meta Platforms
+133,EDF
+134,Costco
+135,XCEL Energy
+136,Enel
+137,Bny Mellon
+138,Tesco
+139,Engie
+140,Eli Lilly
+141,National Australia Bank
+142,Chugai Pharma
+143,J M Smucker
+144,Canadian Pacific Railway
+145,Mizuho Financial
+146,Unicredit
+147,Neste
+148,Commerzbank
+149,Voya Financial
+150,Merck & Company
+151,Gilead Sciences
+152,Paypal
+153,Honda Motor
+154,Altria
+155,Northern Trust
+156,Enbridge
+157,Sainsbury
+158,Signify
+159,Walt Disney
+160,Hilton
+161,Zalando
+162,Fast Retailing
+163,Sumitomo Mitsui Financial
+164,T Rowe Price
+165,Anheuser-Busch Inbev
+166,Burberry
+167,Raiffeisen
+168,BHP
+169,Kinder Morgan
+170,Toyota Motor
+171,Inditex
+172,Novo Nordisk
+173,HDFC
+174,PNC Financial Services
+175,Sherwin-Williams
+176,Banco Bradesco
+177,Delta Air Lines
+178,Coterra Energy
+179,LVMH
+180,Conagra
+181,Itau Unibanco Holding
+182,Suzuki Motor
+183,UPS
+184,Berkshire Hathaway
+185,Nissin Foods
+186,Ericsson
+187,Accenture
+188,Vodafone
+189,Kellogg
+190,Dbs Holdings
+191,AT&T
+192,Prudential Financial
+193,AXA
+194,Hershey
+195,National Grid
+196,Exelon
+197,Colgate-Palmolive
+198,Ameriprise Financial
+199,Lowe's
+200,Intel
+201,Raytheon Technologies
+202,Invesco
+203,China Mobile
+204,Regions Financial
+205,Metlife
+206,Hugo Boss
+207,Alstom
+208,Galp Energia
+209,American Electric Power
+210,Baidu
+211,Equinor
+212,CSX
+213,Capital One Financial
+214,Electrolux
+215,3M
+216,Becton Dickinson
+217,Regeneron
+218,Macquarie
+219,Cisco Systems
+220,Holcim
+221,Honeywell
+222,Campbell Soup
+223,VF Corporation
+224,UnitedHealth Group
+225,Activision Blizzard
+226,HP
+227,Petrobras
+228,AIG
+229,Caterpillar
+230,United Overseas Bank
+231,Sodexo
+232,Sinopec
+233,Biogen
+234,ABB Group
+235,Electronic Arts
+236,Porsche
+237,ING Group
+238,Bunge
+239,Adobe Systems
+240,Marriott International
+241,Associated British Foods
+242,Lion
+243,Saudi Aramco
+244,Morrison
+245,Sberbank
+246,Eaton Vance
+247,Hewlett Packard Enterprise
+248,Southern Company
+249,Principal Financial
+250,Investec
+251,Woolworths
+252,Air Liquide
+253,PetroChina
+254,Tate & Lyle
+255,Michelin
+256,Allstate
+257,Pernod-Ricard
+258,Nextera Energy
+259,Hormel Foods
+260,Iberdrola
+261,Charter Communication
+262,Diageo
+263,Keycorp
+264,Edison International
+265,Medtronic
+266,Fortescue Metals
+267,Swisscom
+268,Visa
+269,ABN Amro
+270,OMV
+271,Gazprom
+272,Sika
+273,Tencent Holdings
+274,Oracle
+275,Humana
+276,Cigna
+277,Orange
+278,Suntory Beverage & Food
+279,GAP
+280,CNOOC
+281,Nintendo
+282,Wec Energy
+283,Bridgestone
+284,Viatris
+285,Ahold Delhaize
+286,Ajinomoto
+287,Antero Resources
+288,Eastman Chemical
+289,General Electric
+290,Nokia
+291,L'Oreal
+292,Hyatt Hotels and Resorts
+293,Lonza Group
+294,Ecolab
+295,Murphy Oil
+296,Heidelbergcement
+297,Ralph Lauren
+298,Southwest Airlines
+299,Monster Beverage
+300,DNB
+301,Tata Consultancy Services
+302,Lockheed Martin
+303,Dte Energy
+304,Fedex
+305,Teva
+306,Vale
+307,Toshiba
+308,Walgreens Boots Alliance
+309,E.ON
+310,Yamaha Motor
+311,Davita
+312,Imperial Oil
+313,Kinross Gold
+314,Under Armour
+315,Spectrum Brand
+316,Imperial Brands
+317,Arc Resources
+318,Cognizant Technology Solution
+319,Rio Tinto
+320,Erste Bank
+321,National Bank of Canada
+322,Fifth Third Bancorp
+323,Kimberly-Clark
+324,Beiersdorf
+325,Keurig Green Mountain
+326,Meiji Holdings
+327,Kuraray
+328,Boston Scientific
+329,EQT
+330,Daikin Industries
+331,Archer Daniels Midland
+332,Idemitsu Kosan
+333,CSL
+334,Zurich Insurance
+335,Murata Manufacturing
+336,Baxter International
+337,MGM Resorts
+338,Dollar General
+339,Raymond James
+340,Manulife Financial
+341,H Lundbeck
+342,Sysco
+343,Mazda Motor
+344,Xerox
+345,Consolidated Edison
+346,Citizens Financial
+347,KBC
+348,Newmont Mining
+349,Mallinckrodt
+350,Qualcomm
+351,United Airlines Holdings
+352,Essity
+353,Calbee
+354,Orsted
+355,Amcor
+356,Olympus
+357,FMC
+358,Barrick Gold
+359,Pioneer Natural Services
+360,Canadian Utilities
+361,Takeda Pharmaceutical
+362,abrdn PLC
+363,Norfolk Southern
+364,Macy'S
+365,AGL Energy
+366,Kering
+367,Franklin Resources
+368,DSM
+369,ITC
+370,Amerisourcebergen
+371,Nvidia
+372,Celanese
+373,Evonik Industries
+374,Mattel
+375,Aramark
+376,Prudential
+377,Goodyear
+378,M&T Bank
+379,Dominion Energy
+380,Phillips 66
+381,Novatek
+382,Grifols
+383,BT
+384,Asahi Group Holdings
+385,TC Energy Corporation
+386,Gildan Activewear
+387,American Express
+388,Qantas
+389,Softbank
+390,Sempra
+391,Japan Tobacco
+392,Kerry
+393,ITV
+394,Bank of East Asia
+395,KAO
+396,Foot Locker
+397,Fresenius
+398,Caixabank
+399,Best Buy
+400,A P Moller Maersk
+401,Micron Technology
+402,Polaris
+403,Tepco
+404,Rosneft
+405,Ovintiv
+406,Arcelormittal
+407,EOG Resources
+408,Occidental
+409,Thyssenkrupp
+410,Bombardier
+411,Linde
+412,Lindt & Spruengli
+413,Shiseido
+414,Glencore
+415,Evergy
+416,Bankinter
+417,Kyocera
+418,Jeronimo Martins
+419,Symrise
+420,PVH
+421,Molson Coors Brewing
+422,Banco Sabadell
+423,Cameco
+424,Enagas
+425,Brookfield Asset Management
+426,Oriental Land
+427,PPL
+428,Sumitomo Dainippon
+429,SEI Investments
+430,Ametek
+431,Andritz
+432,SAP
+433,Coca-Cola Hbc
+434,NTT
+435,Thermo Fisher Scientific
+436,Texas Instruments
+437,Sun Life
+438,Hollyfrontier
+439,Air France - KLM
+440,Hartford Financial Services
+441,Endesa
+442,Clorox
+443,Canon
+444,Fuji Electric
+445,T-Mobile Us
+446,Northrop Grumman
+447,Amphenol
+448,Shionogi
+449,Target
+450,Whirlpool
+451,Banco do Brasil
+452,TJX
+453,Santen Pharmaceuticals
+454,Stmicroelectronics
+455,Canadian Natural Resources
+456,Newcrest Mining
+457,Air Products
+458,Kohl'S
+459,Nordstrom
+460,Singapore Telecom
+461,Alimentation Couche Tard
+462,Devon Energy
+463,Pinnacle West
+464,General Dynamics
+465,Ball
+466,Wilmar
+467,Discovery
+468,CMS Energy
+469,RWE
+470,Suncor Energy
+471,Deutsche Lufthansa
+472,Realty Income
+473,AES
+474,Ally Financial
+475,Chubb
+476,Jefferies Financial Group
+477,Swatch Group
+478,Motorola Solutions
+479,Entergy
+480,Deere
+481,Meridian Energy
+482,Freeport-Mcmoran
+483,Swiss Life
+484,Legrand
+485,First Quantum Minerals.
+486,Woodside Petroleum
+487,Peyto Exploration & Development
+488,Alcon
+489,Starhub
+490,Kobe Steel
+491,Orkla
+492,CIT Group
+493,Saputo
+494,CRH
+495,Global Payments
+496,Fujifilm
+497,Leidos
+498,Corteva
+499,Vermilion Energy
+500,Covestro
+501,Continental
+502,Halliburton
+503,Mosaic
+504,West Fraser Timber
+505,Agnico-Eagle Mines
+506,Richemont
+507,Telus
+508,Pola Orbis
+509,Public Service Enterprise
+510,Oversea Chinese Banking
+511,Canadian Tire
+512,Salesforce.com
+513,Mitsui
+514,Ipsen
+515,Ferrari
+516,Brookfield Infrastructure Corp
+517,EDP Energias De Portugal
+518,Mitsubishi Motors
+519,Rolls-Royce
+520,Lundin Energy
+521,Carnival
+522,Twitter
+523,Bank Hapoalim
+524,Geberit
+525,Nutrien
+526,AIA Group
+527,Schindler
+528,Schlumberger
+529,Carlsberg
+530,Schroders
+531,Barratt Developments
+532,Veolia Environnement
+533,Lyondellbasell
+534,CGI
+535,Boral
+536,Union Pacific
+537,Tapestry
+538,BCE Inc.
+539,Home Depot
+540,Marathon Oil
+541,Kirin Holdings
+542,Cimic
+543,Oneok
+544,South32
+545,Next
+546,Toyo Suisan Kaisha
+547,Travelers
+548,Nordea
+549,Emera
+550,Cintas
+551,Hermes
+552,Ricoh
+553,Lumen Technologies
+554,Automatic Data Processing
+555,Harley-Davidson
+556,Deutsche Telekom
+557,Teck Resources
+558,Swiss Re
+559,Ryanair Holdings
+560,Tele2
+561,Mercadolibre
+562,Crown Resorts
+563,Electric Power Development
+564,Vestas
+565,WH
+566,Huntington Bancshares
+567,Ping An Insurance Group
+568,Ameren
+569,Eversource Energy
+570,Church & Dwight
+571,Taiwan Semiconductor
+572,Red Electrica
+573,Textron
+574,Sumitomo Chemical
+575,Ono Pharmaceuticals
+576,Anthem
+577,Legal & General
+578,Subaru
+579,Bank of Queensland
+580,Eaton
+581,NH Foods
+582,Mitsubishi Heavy Industries
+583,Kikkoman
+584,Coloplast
+585,eBay
+586,Yue Yuen
+587,Zoetis
+588,Xylem
+589,Affiliated Managers
+590,United Therapeutics
+591,Sonova
+592,John Wood
+593,Restaurant Brands
+594,Terumo
+595,Alfa Laval
+596,Mowi
+597,Incitec Pivot
+598,Nikon
+599,Atlantia
+600,Bath & Body Works
+601,Stryker
+602,Thales
+603,Daicel
+604,Remy Cointreau
+605,L3Harris Technologies
+606,SVB Financial
+607,Eisai
+608,Johnson Matthey
+609,Bluescope Steel
+610,Wesfarmers
+611,Yum! Brands
+612,Western Digital
+613,APA
+614,Japan Airlines
+615,Alliant Energy
+616,Keppel
+617,Alkermes
+618,Aegon
+619,Ingredion
+620,Servicenow
+621,Coty
+622,Telenet
+623,INPEX
+624,Taylor Wimpey
+625,Emerson Electric
+626,Incyte
+627,AMP
+628,Royal Mail
+629,Aptiv
+630,Teledyne Technologies Inc
+631,Hexagon
+632,TUI
+633,Zimmer
+634,Seek
+635,Royal Caribbean Cruises
+636,Swedbank 'A'
+637,Loblaw
+638,Autoliv
+639,Constellation Brands
+640,Svenska Handelsbanken
+641,PPG Industries
+642,Johnson Controls
+643,Jacobs Engineering
+644,Lululemon
+645,Wartsila
+646,McCormick & Company
+647,Mercury
+648,PG&E
+649,Husqvarna
+650,Ampol
+651,James Hardie
+652,Oge Energy
+653,Easyjet
+654,Minebea Mitsumi
+655,Aeon
+656,Ck Hutchison
+657,Fortum
+658,Advanced Micro Devices
+659,Fidelity National Financial
+660,Voestalpine
+661,Crescent Point Energy
+662,Mitsubishi Materials
+663,Taisho Pharmaceutical
+664,Comerica
+665,Asahi Kasei
+666,Shin-Etsu Chemical
+667,Unum
+668,Dick'S Sporting Goods
+669,AGC Inc.
+670,Liberty Global
+671,APA Corporation
+672,SGS
+673,Seven & I
+674,Diamondback Energy
+675,Vinci
+676,Danske Bank
+677,Vmware
+678,Keyera
+679,Kaneka
+680,WW Grainger
+681,TE Connectivity
+682,London Stock Exchange
+683,Asics
+684,Akzo Nobel
+685,Nomura
+686,Prysmian
+687,Hess
+688,Crown Holdings
+689,Methanex
+690,Altice
+691,Obayashi
+692,ICL
+693,NN
+694,Nisource
+695,Las Vegas Sands
+696,Centerpoint
+697,Illumina
+698,Altagas
+699,Yamato
+700,Mitsui Chemicals
+701,Saint Gobain
+702,Daiichi Sankyo
+703,Orix
+704,Lanxess
+705,Sekisui House
+706,Boliden
+707,NTT Data
+708,Mitsubishi Corp
+709,Mitsubishi Electric
+710,OJI
+711,Generali
+712,Compass
+713,Rakuten
+714,Kone
+715,Dish Network
+716,Agilent Technologies
+717,Contact Energy
+718,Solvay
+719,UCB
+720,International Airlines
+721,Mondi
+722,Yakult Honsha
+723,Givaudan
+724,Origin Energy
+725,Intercontinental Hotels
+726,CLP
+727,Peoples United Financial
+728,Eutelsat Communications
+729,Jazz Pharmaceuticals
+730,Analog Devices
+731,Canadian National
+732,Norwegian Cruise Line
+733,Hasbro
+734,Old Mutual
+735,Siemens Healthineers
+736,Hikma Pharmaceuticals
+737,IMI
+738,Kansai Electric Power
+739,America Movil
+740,Bouygues
+741,Hanesbrands
+742,Vertex Pharmaceuticals
+743,UGI
+744,Ingersoll-Rand
+745,Sumitomo Heavy Industries
+746,Kose
+747,Hammerson
+748,Domino'S Pizza
+749,Marubeni
+750,Brother Industries
+751,Kyushu Electric Power
+752,Kimco Realty
+753,Bezeq
+754,JSR Corp
+755,Tosoh
+756,Hutchison Port Hldg Trust
+757,Pentair
+758,Darden Restaurants
+759,Henry Schein
+760,Babcock International
+761,Toray
+762,Isuzu Motors
+763,Atlas Copco
+764,Sonic Healthcare
+765,Sumitomo Metal Mining
+766,Kawasaki Heavy Industry
+767,Cummins
+768,Seagate Technology
+769,Brambles
+770,Natixis
+771,Yamazaki Baking
+772,Naturgy
+773,Lennox
+774,First Republic Bank
+775,Casio Computer
+776,Loews
+777,CAE
+778,Technipfmc
+779,Capri Holdings Limited
+780,SES
+781,Qiagen
+782,CK Infrastructure Holdings
+783,Waters
+784,Broadcom
+785,Range Resources
+786,Deutsche Wohnen
+787,Brown-Forman
+788,Ulta Beauty
+789,Vulcan Materials
+790,MTR
+791,Japan Post Bank
+792,JC Decaux
+793,Idexx Laboratories
+794,Norsk Hydro
+795,Nisshin Seifun
+796,Cardinal Health
+797,Suncorp
+798,Perrigo
+799,Edwards Lifesciences
+800,Mitsui Osk Lines
+801,CNH Industrial
+802,Tourmaline Oil
+803,Nissan Chemical
+804,Lear
+805,EssilorLuxottica
+806,Rockwell Automation
+807,HK Electric
+808,Baker Hughes
+809,Lennar
+810,Golden Agri-Resources
+811,Westrock
+812,Eneos
+813,Sensata Technologies
+814,Yamana Gold
+815,Yara
+816,East Japan Railway
+817,Snam
+818,Sembcorp Industries
+819,United Internet
+820,Safran
+821,Ross Stores
+822,First Pacific
+823,Sun Hung Kai Properties
+824,George Weston
+825,Convatec
+826,Tokyo Gas
+827,Persimmon
+828,Bank of Ireland
+829,Nucor
+830,Tokio Marine
+831,Magna
+832,Singapore Technologies Engineering
+833,Taiheiyo Cement
+834,Vifor Pharma
+835,Acuity Brands
+836,Aviva
+837,Getlink
+838,Comfortdelgro
+839,Lagardere
+840,CF Industries
+841,Stanley Black & Decker
+842,Williams
+843,Resona
+844,Kion
+845,Atmos Energy
+846,Pembina Pipeline
+847,Zions Bancorp
+848,Terna SpA
+849,Otsuka Holdings
+850,Colruyt
+851,Hoshizaki
+852,Chiba Bank
+853,News Corporation
+854,Shinsei Bank
+855,Aozora Bank
+856,Bendigo & Adelaide Bank
+857,Applied Materials
+858,Rinnai
+859,Whitbread
+860,Unibail-Rodamco-Westfield
+861,NEC
+862,Wheaton Precious Metals
+863,Croda International
+864,Intuit
+865,Rogers Communications
+866,Pearson
+867,ViacomCBS
+868,Toyo Seikan
+869,Bollore
+870,Valeo
+871,Toyoda Gosei
+872,Assurant
+873,British Land
+874,Hisamitsu
+875,Marvell Technology
+876,Qurate Retail
+877,Autodesk
+878,Sharp
+879,TDK
+880,Axis Capital
+881,Align Technology
+882,Intuitive Surgical
+883,RTL
+884,Core Laboratories
+885,Rexel
+886,Dexcom
+887,Tabcorp Holdings
+888,Eiffage
+889,Schaeffler
+890,Concordia Financial
+891,Packaging Corporation of America
+892,Coca-Cola Bottlers Japan
+893,SSE
+894,ICA Gruppen
+895,American Financial
+896,Fastenal
+897,Fortis
+898,Recordati
+899,Telenor
+900,Uni Charm
+901,Corning
+902,Telstra
+903,Dentsply Sirona
+904,CK Asset
+905,Kingspan
+906,Quest Diagnostics
+907,Dassault Systemes
+908,Swire Pacific
+909,Telecom Italia
+910,Tohoku
+911,Hirogin Holdings
+912,International Paper
+913,Resmed
+914,Synchrony Financial
+915,Albemarle
+916,Sumitomo Rubber
+917,Brixmor
+918,Bae Systems
+919,Sandvik
+920,Fukuoka Financial
+921,Vopak
+922,Getinge
+923,S&P Global
+924,Firstenergy
+925,Arconic
+926,Alliance Data
+927,International Flavour & Fragrances
+928,Digital Realty Trust
+929,Arrow Electronics
+930,Continental Resources
+931,Power Assets
+932,Ventas
+933,Citrix Systems
+934,Kurita Water
+935,Hino Motors
+936,New World Development
+937,Western Union
+938,Koito Manufacturing
+939,Intact Financial
+940,Xilinx
+941,Amadeus
+942,Singapore Press
+943,Microchip Technology
+944,Teijin
+945,Fujitsu
+946,Chugoku Electric Power
+947,Mitsubishi Gas Chemical
+948,Swedish Match
+949,Dover
+950,A.O. Smith
+951,Casino Guichard
+952,Plains
+953,National Oilwell Varco
+954,Dassault Aviation
+955,Kintetsu
+956,Allegion
+957,Sumitomo
+958,Avnet
+959,Masco
+960,Stericycle
+961,Ramsay Health Care
+962,Wyndham Hotels & Resorts
+963,KPN
+964,Signet Jewelers
+965,Borgwarner
+966,Open Text
+967,Interpublic
+968,Rohm
+969,Berkeley
+970,Nidec
+971,Jardine Cycle & Carriage
+972,Fortinet
+973,Jtekt
+974,Mettler Toledo
+975,Insurance Australia
+976,Capgemini
+977,Axalta Coating Systems
+978,ANA
+979,Orica
+980,Cheniere
+981,Singapore Airlines
+982,Telefonica
+983,Paychex
+984,Hong Kong And China Gas
+985,Air Water
+986,Nokian Renkaat
+987,Steel Dynamics
+988,JB Hunt
+989,United Rentals
+990,K + S
+991,United Utilities
+992,Straumann
+993,Nippon Paint
+994,Laboratory Corporation of America
+995,Telia
+996,Splunk
+997,Edenred
+998,Sl Green Realty
+999,Danaher
+1000,Trimble
+1001,American Water
+1002,Newell Brands
+1003,Disco
+1004,NXP Semiconductors
+1005,Power Corporation of Canada
+1006,Smith & Nephew
+1007,HKT Trust and HKT Ltd
+1008,Spark New Zealand
+1009,DCC
+1010,Hochtief
+1011,Workday
+1012,Expeditor International
+1013,Teleflex
+1014,Metro
+1015,Republic Services
+1016,William Demant
+1017,Lam Research
+1018,Mizrahi Tefahot
+1019,Hydro One
+1020,Stora Enso OYJ
+1021,Kyowa Hakko Kirin
+1022,GLP
+1023,Galenica
+1024,Shangri-La Asia
+1025,Fletcher Building
+1026,Kingfisher
+1027,Kddi
+1028,Fortive
+1029,U.S. Steel
+1030,Kla Tencor
+1031,Shimamura
+1032,Illinois Tool Works
+1033,Fuchs Petrolub
+1034,Stanley Electric
+1035,Treasury Wine Estates
+1036,Millicom
+1037,Lixil
+1038,Transurban
+1039,Skyworks Solutions
+1040,JFE Holdings
+1041,Chubu Electric Power
+1042,Aercap
+1043,Dollar Tree
+1044,Antofagasta
+1045,DXC Technology
+1046,HCA Healthcare
+1047,East West Bancorp
+1048,Discover Financial Services
+1049,Julius Baer
+1050,Patterson
+1051,Orion Corporation
+1052,Saipem
+1053,Toyota Tsusho
+1054,Centene
+1055,Kyushu Financial
+1056,Arkema
+1057,Novozymes
+1058,Duke Realty
+1059,Garmin
+1060,Umicore
+1061,J Front Retailing
+1062,Nitto Denko
+1063,SKF
+1064,Deutsche Boerse
+1065,Komatsu
+1066,Mabuchi Motor
+1067,Scentre
+1068,Centrica
+1069,Travis Perkins
+1070,Pandora
+1071,Hysan Development
+1072,CCL Industries
+1073,Boston Properties
+1074,BIC
+1075,Seibu Holdings
+1076,Toto
+1077,Universal Health Services
+1078,Isetan Mitsukoshi
+1079,Sumitomo Electric
+1080,Flutter Entertainment
+1081,Yaskawa Electric
+1082,Flowserve
+1083,Welltower
+1084,UDR
+1085,First Capital Realty
+1086,Lendlease
+1087,Bed Bath & Beyond
+1088,Shizuoka Bank
+1089,Alps Electric
+1090,Keikyu
+1091,Christian Hansen
+1092,Konica Minolta
+1093,Vonovia
+1094,Public Storage
+1095,Ferrovial
+1096,Ageas
+1097,Experian
+1098,Smiths
+1099,Ansys
+1100,Fox Corporation
+1101,Cadence Design Systems
+1102,Autonation
+1103,Relx
+1104,ACS
+1105,Assa Abloy
+1106,Computershare
+1107,Techtronic
+1108,Fiserv
+1109,Leumi
+1110,Broadridge Financial
+1111,Elbit Systems
+1112,Dai-Ichi Life Holdings
+1113,Tokyo Electron
+1114,GEA
+1115,Randstad
+1116,Bunzl
+1117,Asm Pacific Technology
+1118,Hamamatsu Photonics
+1119,Finning
+1120,Thomson Reuters
+1121,Traton
+1122,Zillow
+1123,SNC-Lavalin
+1124,Snap-On
+1125,DIA
+1126,Mohawk Industries
+1127,Waste Management
+1128,NSK
+1129,Kajima
+1130,Tokyo Tatemono
+1131,Keio
+1132,M&G
+1133,Aristocrat Leisure
+1134,GPT
+1135,Suntec Real Estate
+1136,Galaxy Entertainment
+1137,Mckesson
+1138,Iliad
+1139,W R Berkley
+1140,Carmax
+1141,O Reilly Automotive
+1142,TPG Telecom
+1143,Denso
+1144,Mitsubishi Ufj Lease & Finance
+1145,Yamada Denki
+1146,Mediobanca
+1147,CapitaLand Integrated Commercial Trust
+1148,Proximus
+1149,Sealed Air
+1150,Bandai Namco
+1151,Essex Property Trust
+1152,Alexandria Real Estate Equities
+1153,Signature Bank
+1154,IHI
+1155,CH Robinson
+1156,Kansai Paint
+1157,Nippon Building Fund
+1158,Genting Singapore
+1159,Biomarin Pharmaceutical
+1160,Transdigm
+1161,PCCW
+1162,Flex
+1163,Owens Corning
+1164,Hoya
+1165,Tenaris
+1166,Fluor
+1167,Henderson Land
+1168,Mebuki Financial
+1169,Gecina Reit
+1170,Avery Dennison
+1171,Asml
+1172,Icade
+1173,Hong Kong Exchanges
+1174,Provident Financial
+1175,Sysmex
+1176,Moody'S
+1177,Naspers
+1178,Targa Resources
+1179,Currys
+1180,Aflac
+1181,Ausnet Services
+1182,Stockland
+1183,Sands China
+1184,Cooper Companies
+1185,Blackberry
+1186,NortonLifeLock
+1187,H.U. Group Holdings
+1188,Parker-Hannifin
+1189,Synopsys
+1190,Daiwa House Industry
+1191,Yamaha Corporation
+1192,Verisign
+1193,Muenchener Ruck
+1194,Taisei
+1195,D R Horton
+1196,Juniper Networks
+1197,Camden Property Trust
+1198,Informa
+1199,Sydney Airport
+1200,QBE Insurance
+1201,Medibank Private
+1202,Adecco
+1203,Scor
+1204,Wabtec
+1205,Aurizon
+1206,Commscope
+1207,Middleby
+1208,SEB
+1209,Worldline
+1210,Dufry
+1211,Vivendi
+1212,Amada
+1213,Klepierre
+1214,Central Japan Railway
+1215,NWS Holdings
+1216,DSV
+1217,Weatherford
+1218,Odakyu Electric
+1219,Equinix
+1220,Cochlear
+1221,Segro
+1222,MS&AD Insurance
+1223,Brenntag
+1224,Melrose
+1225,Advance Auto Parts
+1226,Prologis
+1227,Seiko Epson
+1228,Iron Mountain
+1229,Kuehne & Nagel
+1230,Kyushu Railway
+1231,Makita
+1232,Kubota
+1233,Meggitt
+1234,Leonardo
+1235,Arista Networks
+1236,New York Community Bancorp
+1237,Genmab
+1238,Vail Resorts
+1239,Swiss Prime Site
+1240,Poste Italiane
+1241,Auto Trader
+1242,Omron
+1243,Simon Property
+1244,Hang Seng Bank
+1245,Hologic
+1246,Netapp
+1247,Akamai Technologies
+1248,F5 Networks
+1249,Hulic
+1250,Ryohin Keikaku
+1251,Tryg
+1252,Equifax
+1253,Shaw Communications
+1254,Taiyo Nippon Sanso
+1255,Vicinity Centres
+1256,HCP
+1257,Agco
+1258,Infineon
+1259,Jones Lang Lasalle
+1260,Extra Space Storage
+1261,Paccar
+1262,Boc Hong Kong
+1263,UOL
+1264,Helmerich & Payne
+1265,Autozone
+1266,Avalonbay Communities
+1267,UPM-Kymmene
+1268,CI Financial
+1269,Huntington Ingalls Industries
+1270,Suez
+1271,Leggett & Platt
+1272,Dentsu
+1273,Cerner
+1274,Globe Life
+1275,Marsh & Mclennan
+1276,Micro Focus
+1277,Mirvac
+1278,Martin Marieta
+1279,Macerich
+1280,Crown Castle
+1281,SS&C Technologies
+1282,SJM
+1283,Keihan Holdings
+1284,Osaka Gas
+1285,Nippon Electric Glass
+1286,SMC
+1287,Seagen
+1288,Qorvo
+1289,Booking Holdings
+1290,American Tower
+1291,Check Point Software Tech
+1292,City Developments
+1293,Puma
+1294,Ashtead
+1295,TDC
+1296,Sino Land
+1297,Franco-Nevada
+1298,Deutsche Post
+1299,Investor
+1300,Sompo
+1301,Nippon Steel
+1302,Jardine Matheson Hdg.
+1303,Vornado Realty Trust
+1304,Toho Gas
+1305,Atos
+1306,Mitsui Fudosan
+1307,Publicis
+1308,Eurofins Scientific
+1309,Mitsubishi Estate
+1310,Marui
+1311,W R Grace
+1312,Tractor Supply
+1313,CNP Assurances
+1314,Expedia
+1315,IGM
+1316,Fairfax Financial
+1317,Wharf Holdings
+1318,Shimizu
+1319,IQVIA
+1320,Benesse
+1321,Imerys
+1322,Annaly
+1323,Host Hotels & Resorts
+1324,Wolters Kluwer
+1325,Manpower
+1326,Mid-America Apartment Communities
+1327,NGK Insulators
+1328,LKQ
+1329,Prairiesky Royalty
+1330,Severn Trent
+1331,Waste Connections
+1332,Palo Alto Networks
+1333,Daiwa Securities
+1334,Suzuken
+1335,Marathon Petroleum Corp
+1336,Navient
+1337,Industrial Insurance Alliance
+1338,Genuine Parts
+1339,Weyerhaeuser
+1340,DS Smith
+1341,Christian Dior
+1342,Wynn Resorts
+1343,Alumina
+1344,Abc-Mart
+1345,GBL
+1346,Sega Sammy
+1347,Elisa
+1348,NOK
+1349,NVR
+1350,Hong Kong Land
+1351,Tokyu
+1352,Shimadzu
+1353,Pulte
+1354,Keyence
+1355,Great West Lifeco
+1356,Riocan Reit Trust.
+1357,Dexus
+1358,Robert Half International
+1359,West Japan Railway
+1360,Fanuc
+1361,Alleghany
+1362,CDK Global
+1363,Japan Post Holdings
+1364,Harvey Norman
+1365,IDEX
+1366,Nippon Yusen
+1367,NGK Spark Plug
+1368,Land Securities
+1369,Aena
+1370,Challenger
+1371,Arthur J Gallagher
+1372,Progressive Corporation
+1373,Lincoln National
+1374,WPP
+1375,Tripadvisor
+1376,Baloise
+1377,CDW
+1378,Hirose Electric
+1379,ZOZO
+1380,Constellation Software
+1381,H&R Real Estate Investment Trust
+1382,Fleetcor Technologies
+1383,Goodman
+1384,Gjensidige Forsikring
+1385,Securitas
+1386,Exor
+1387,Industrivarden
+1388,Onex
+1389,Mapfre
+1390,Logitech
+1391,Omnicom
+1392,Ryman Healthcare
+1393,Ferguson
+1394,MGM China Holdings
+1395,Dai Nippon Printing
+1396,Bureau Veritas
+1397,Nippon Express Holdings
+1398,Sirius XM
+1399,Don Quijote Holdings
+1400,Liberty Media
+1401,Yokogawa Electric
+1402,Carrier Global Corp.
+1403,Aisin Corporation
+1404,ON Semiconductor
+1405,Yangzijiang Shipbuilding
+1406,THK
+1407,Daifuku
+1408,ISS
+1409,ASX
+1410,Admiral
+1411,Sage
+1412,Xiaomi
+1413,Trend Micro
+1414,SBA Communications
+1415,Unipolsai
+1416,BYD
+1417,Toll Brothers
+1418,United Urban Investment
+1419,Shimano
+1420,Maruichi Steel Tube
+1421,Atco
+1422,Nice
+1423,Kamigumi
+1424,Mednax
+1425,Moncler
+1426,Osram
+1427,Flight Centre Travel
+1428,Keisei Electric Railway
+1429,Great Wall Motor
+1430,Kinnevik
+1431,MSCI
+1432,Dollarama
+1433,Hang Lung Properties
+1434,St. James's Place
+1435,Xinjiang Goldwind Science & Technology
+1436,Markel
+1437,Reinsurance Group of America
+1438,Partners Group
+1439,Nasdaq
+1440,CBRE
+1441,CME
+1442,Covivio
+1443,Nabtesco
+1444,Mediclinic International
+1445,Yokohama Rubber
+1446,Mixi
+1447,Kerry Properties
+1448,Industrial Bank Co.
+1449,JGC
+1450,Wendel
+1451,Sankyo
+1452,Everest Re
+1453,EDP Renovaveis
+1454,Daito Trust Construction
+1455,Carl Zeiss Meditec
+1456,Sabre
+1457,Weir
+1458,Lundbergforetagen
+1459,Arch Capital
+1460,Schibsted
+1461,Ihs Markit
+1462,Direct Line
+1463,Fraport
+1464,Agricultural Bank of China
+1465,Alfresa
+1466,Hankyu Hanshin
+1467,Tobu Railway
+1468,CBOE Global Markets
+1469,Renaissancere
+1470,Japan Metropolitan Fund Investment Corp
+1471,Gartner
+1472,Aeon Mall
+1473,Japan Real Estate Investment
+1474,China Shenhua Energy
+1475,Linamar
+1476,Fresnillo
+1477,NIBE Industrier
+1478,Federal Realty
+1479,IPG Photonics
+1480,Hannover Ruck
+1481,PerkinElmer Inc
+1482,China Construction Bank
+1483,LG Chem
+1484,Empire
+1485,Hargreaves Lansdown
+1486,Nielsen
+1487,Bank of Kyoto
+1488,Aeroports De Paris
+1489,Hakuhodo
+1490,Otsuka
+1491,Eurazeo
+1492,Tokyu Fudosan
+1493,Takashimaya
+1494,Fortune Brands
+1495,3I
+1496,Ascendas Reit
+1497,TPI Composites
+1498,Insulet Corp
+1499,Ems-Chemie
+1500,Keysight Technologies
+1501,Toho
+1502,SATS
+1503,Sumitomo Realty
+1504,T & D Holdings
+1505,Otis Worldwide
+1506,China Telecom
+1507,Obic
+1508,Intertek
+1509,Auckland Airport
+1510,Recruit
+1511,Landis+Gyr
+1512,Kweichow Moutai Co.
+1513,Northland Power
+1514,Digitalbridge Group
+1515,Prosiebensat
+1516,Verisk Analytics
+1517,Svenska Cellulosa
+1518,Misumi
+1519,Lawson
+1520,Avantor Inc
+1521,Hachijuni Bank
+1522,FinecoBank
+1523,Boskalis Westminster
+1524,Capita
+1525,Nippon Prologis Reit
+1526,Regency Centers
+1527,DiaSorin
+1528,Veeva Systems
+1529,MediaTek
+1530,NTT Docomo
+1531,Delta Electronics
+1532,Spirax-Sarco Engineering
+1533,AON
+1534,Costar
+1535,Yadea Group Holdings
+1536,Seven Bank
+1537,Turquoise Hill
+1538,TOMRA
+1539,China Everbright Environment
+1540,Nitori
+1541,Aeon Financial Service
+1542,XPeng
+1543,Toppan Printing
+1544,Trane Technologies
+1545,Knorr-Bremse
+1546,Aker Carbon Capture
+1547,Cobham
+1548,AGNC Investment
+1549,Kakaku.Com
+1550,Jack Henry & Associates
+1551,H&R Block
+1552,Enphase Energy
+1553,Element Solutions Inc
+1554,Kirkland Lake Gold
+1555,Gurit
+1556,Georg Fischer
+1557,Belimo
+1558,Taro Pharmaceutical Industries
+1559,China Merchants Bank
+1560,WuXi AppTec
+1561,Roper Technologies
+1562,WSP Global
+1563,Skanska
+1564,Blackstone
+1565,Yamaguchi Financial
+1566,REA
+1567,Emmi
+1568,Tecan Group
+1569,G4S
+1570,Plug Power
+1571,WuXi Biologics
+1572,SK Hynix
+1573,Chugoku Bank
+1574,Sundrug
+1575,EVRAZ
+1576,Japan Prime Realty Investment
+1577,Knight-Swift Transportation Holdings Inc
+1578,Intercontinental Exchange
+1579,Cognex Corporation
+1580,Trex Company
+1581,Vistra Corp
+1582,Advanced Drainage Systems
+1583,Japan Exchange
+1584,INFICON
+1585,Tetra Tech
+1586,West Pharmaceutical Services Inc
+1587,Li & Fung
+1588,Airbnb
+1589,Coca-Cola Amatil
+1590,Norilsk Nickel
+1591,Renesas Electronics Corp
+1592,Sartorius
+1593,Smart Reit Trust
+1594,Bank Rakyat Indonesia
+1595,Sampo
+1596,Azrieli
+1597,Entegris Inc
+1598,Caesars Entertainment Inc
+1599,Monolithic Power Systems
+1600,KKR & Co Inc
+1601,Suruga Bank
+1602,Konami
+1603,Faurecia
+1604,Kuaishou
+1605,Nagoya Railroad
+1606,RSA Insurance
+1607,Daetwyler
+1608,Iida
+1609,Paycom Software Inc
+1610,PT Bank Central Asia Tbk
+1611,SBI Holding
+1612,Postal Savings Bank of China
+1613,Rollins
+1614,bioMérieux
+1615,Nongfu Spring
+1616,PTC Inc.
+1617,Grupo Mexico
+1618,Zebra Technologies
+1619,Sohgo Securities
+1620,Corbion
+1621,Air Canada
+1622,Teradyne Inc
+1623,First Citizens BancShares Inc
+1624,Darling Ingredients Inc
+1625,Medipal
+1626,Etsy
+1627,Shopify
+1628,Inmarsat
+1629,Cyberdyne
+1630,Unity Software Inc.
+1631,Generac
+1632,Element Fleet Management
+1633,Smurfit Kappa
+1634,Meituan
+1635,Kotak Mahindra Bank
+1636,Uber
+1637,First Solar
+1638,Halma
+1639,ORPEA
+1640,Amerco
+1641,Dena
+1642,Japan Airport Terminal
+1643,Secom
+1644,Steris
+1645,Moderna Inc.
+1646,Masimo
+1647,Singapore Exchange
+1648,JD.com
+1649,ALSO
+1650,Fidelity National Information Services Inc
+1651,Copart
+1652,Northern Star Resources
+1653,Teleperformance
+1654,Old Dominion Freight Line
+1655,Wheelock
+1656,Acom
+1657,Square
+1658,DoorDash
+1659,Adyen
+1660,Ballard Power Systems
+1661,Bank of Communications
+1662,Essential Utilities
+1663,Nomad Foods Ltd
+1664,Snap Inc.
+1665,Catalent Inc
+1666,ITM Power
+1667,WEG
+1668,Cable One Inc
+1669,Temenos
+1670,Foxconn (Hon Hai Precision)
+1671,Molina Healthcare Inc
+1672,Davide Campari Milano NV
+1673,Brighthouse Financial
+1674,Naver
+1675,Cincinnati Financial
+1676,Samsung SDI
+1677,Nordson Corp
+1678,Charles River Laboratories
+1679,Booz Allen Hamilton Holding Corp
+1680,Samsung Biologics
+1681,Lucid Motors
+1682,Advantest Corp
+1683,ABIOMED
+1684,Lemonade
+1685,Beijing Enterprises Water
+1686,Spotify
+1687,Pinterest Inc
+1688,SolarEdge Technologies
+1689,Xinyi Solar Holdings
+1690,Xinyi Glass Holdings Ltd
+1691,SIG Combibloc Group
+1692,State Bank of India
+1693,National Retail Properties
+1694,Peloton Interactive
+1695,Rentokil Initial
+1696,Cloudflare
+1697,Twilio
+1698,Burlington Stores Inc
+1699,EPAM Systems
+1700,Dropbox Inc
+1701,RPM International
+1702,Coupa Software Inc
+1703,Credit Saison
+1704,HelloFresh
+1705,The SFS Group
+1706,NIO
+1707,Phoenix Group Holdings
+1708,Bechtle AG
+1709,LEG Immobilien SE
+1710,Robinhood Markets Inc
+1711,Black Knight Inc
+1712,Guidewire Software Inc
+1713,Intu Properties
+1714,Ivanhoe Mines
+1715,NetEase
+1716,Chewy Inc
+1717,NovoCure
+1718,Ibiden Co Ltd
+1719,HCL Technologies
+1720,Lundin Mining Corp
+1721,Match Group
+1722,POOLCORP
+1723,Zendesk Inc
+1724,Zoom Video Communications
+1725,GoDaddy Inc
+1726,Beyond Meat
+1727,Nuance Communications
+1728,LONGi Green Energy Technology
+1729,Merlin Entertainments
+1730,Cellnex Telecom SA
+1731,TransUnion
+1732,Snowflake Inc.
+1733,Novavax Inc
+1734,Healthscope
+1735,Tyler Technologies Inc
+1736,Roblox Corporation
+1737,Hikari Tsushin
+1738,Tsuruha
+1739,Kesko Oyj
+1740,Exact Sciences Corp
+1741,Palantir Technologies
+1742,RingCentral Inc
+1743,NRG Energy Inc
+1744,Elanco Animal Health Inc
+1745,Wayfair Inc
+1746,Brookfield Renewable Corp
+1747,BTS Group Holdings
+1748,Asana Inc
+1749,Coupang
+1750,Rivian
+1751,TeamViewer
+1752,Jiangsu Hengrui Medicine
+1753,Sabesp (Cia de Saneamento Basico do Estado de Sao Paulo)
+1754,Carvana
+1755,Roku Inc
+1756,Nippon Shinyaku Co Ltd
+1757,China Life Insurance Company
+1758,Atlassian
+1759,Carlyle Group Inc
+1760,Dynatrace
+1761,SoftwareONE
+1762,Bachem
+1763,Alexion Pharmaceuticals
+1764,M3
+1765,Sea
+1766,Ceridian HCM Holding Inc
+1767,Okta Inc
+1768,The Interroll Group
+1769,Apollo Global Management Inc
+1770,Avalara
+1771,Willis Towers Watson
+1772,NARI Technology Co.
+1773,AMC Entertainment Holdings Inc
+1774,Helvetia
+1775,VZ Group
+1776,Bentley Systems Inc
+1777,Prosus
+1778,CyberArk
+1779,Park24
+1780,Trade Desk Inc.
+1781,DocuSign
+1782,Mercari
+1783,Z Holdings Corp.
+1784,Sunrun Inc
+1785,Lyft
+1786,Ceres Power
+1787,SoFi Technologies Inc
+1788,Bio-Techne Corporation
+1789,Quanta Services Inc
+1790,MongoDB Inc
+1791,HubSpot Inc
+1792,Fair Isaac Corp
+1793,Alnylam Pharmaceuticals
+1794,Live Nation Entertainment Inc
+1795,Royalty Pharma PLC
+1796,Upstart Holdings Inc
+1797,Neoen
+1798,Zscaler
+1799,Alfen
+1800,Magellan Financial Group Ltd
+1801,Hitachi Construction Machinery Co Ltd
+1802,Ocado Group
+1803,Nexon
+1804,Walmart de Mexico y Centroamérica
+1805,Marketaxess Holdings Inc
+1806,Affirm Holdings Inc
+1807,Husky Energy
+1808,CyberAgent Inc
+1809,Tradeweb Markets Inc
+1810,Shanxi Xinghuacun Fen Wine Factory Co.
+1811,Oak Street Health Inc
+1812,Take-Two Interactive Software Inc
+1813,Coinbase Global Inc
+1814,Equitable Holdings Inc
+1815,Venture Corporation Ltd
+1816,Foshan Haitian Flavouring & Food Co.
+1817,Wabco
+1818,China Yangtze Power
+1819,Brown & Brown Inc.
+1820,10X Genomics
+1821,Inmode Ltd
+1822,Lem
+1823,Datadog
+1824,CrowdStrike
+1825,Vereit
+1826,Abertis
+1827,Japan Post Insurance Co Ltd
+1828,Fiverr International Ltd
+1829,Factset Research Systems Inc
+1830,Neurocrine Biosciences Inc
+1831,DraftKings Inc
+1832,Erie Indemnity Co.
+1833,Rational AG
+1834,Kornit Digital Ltd
+1835,Lasertec Corp
+1836,Universal Music
+1837,HEICO Corp
+1838,First Financial Bankshares Inc
+1839,Pinnacle Financial Partners Inc
+1840,Commerce Bancshares Inc
+1841,TFI International Inc
+1842,Capcom Co Ltd
+1843,Wuxi Lead Intelligent Equipment
+1844,Clariant
+1845,Liberty Broadband Corp
+1846,Lazard Ltd
+1847,First Financial Bancorp
+1848,Western Alliance Bancorp
+1849,Prosperity Bancshares Inc
+1850,First Horizon Corp
+1851,Popular Inc
+1852,Valley National Bancorp
+1853,BOK Financial Corp
+1854,Glacier Bancorp Inc
+1855,SouthState Corp
+1856,Home BancShares Inc
+1857,Express Scripts
+1858,Time Warner
+1859,Envision Healthcare
+1860,Silergy Corp
+1861,Scout24 SE
+1862,Cabot Oil & Gas
+1863,Ares Management Corp
+1864,TD Ameritrade
+1865,First Interstate BancSystem Inc
+1866,Synovus Financial Corp
+1867,Community Bank System Inc
+1868,Associated Banc-Corp
+1869,Square Enix Holdings Co Ltd
+1870,VAT Group
+1871,Credicorp Ltd
+1872,Telephone and Data Systems Inc
+1873,Guangzhou Automobile Group
+1874,Power Integrations Inc
+1875,KCC Corporation
+1876,Adeka
+1877,Alpek
+1878,Formosa Plastics Corp.
+1879,Hengli Petrochemical
+1880,Super Micro Computer Inc
+1881,Familymart
+1882,ASM International NV
+1883,Chesapeake Utilities Corp
+1884,Hilltop Holdings Inc
+1885,Axel Springer
+1886,Siemens Gamesa Renewable Energy SA
+1887,Wizz Air Holdings
+1888,Denbury Inc
+1889,Callon Petroleum Co
+1890,Southwestern Energy Co
+1891,Public Power Corp
+1892,Whiting Petroleum Corp
+1893,Chesapeake Energy Corp
+1894,Oasis Petroleum Inc
+1895,Equitrans Midstream Corp
+1896,PNM Resources Inc
+1897,Sterling Bancorp
+1898,Bank Ozk
+1899,California Resources Corp
+1900,United States Cellular Corp
+1901,SK Telecom Co Ltd
+1902,KT Corp
+1903,China Unicom Hong Kong Ltd
+1904,Advanced Info Service PCL
+1905,Iridium Communications Inc
+1906,Far EasTone Telecommunications Co Ltd
+1907,Chunghwa Telecom Co Ltd
+1908,Telekom Austria AG
+1909,Comfort Systems USA Inc
+1910,Life Time Group Holdings Inc
+1911,SeaWorld Entertainment Inc
+1912,Six Flags Entertainment Corp
+1913,Kansas City Southern
+1914,Edgewell Personal Care Co
+1915,Ultra Clean Holdings Inc
+1916,Powerchip Semiconductor Manufacturing Corp
+1917,ASE Technology Holding Co Ltd
+1918,Wolfspeed Inc
+1919,Amkor Technology Inc
+1920,MACOM Technology Solutions Holdings Inc
+1921,SiTime Corp
+1922,Will Semiconductor Co Ltd Shanghai
+1923,Yageo Corp
+1924,Hua Hong Semiconductor Ltd
+1925,GigaDevice Semiconductor Beijing Inc
+1926,Invitae Corp
+1927,SRF
+1928,SKC
+1929,Unimicron Technology Corp
+1930,Adient PLC
+1931,Umpqua Holdings Corp
+1932,Navin Fluorine International
+1933,China Eastern Airlines
+1934,Air China
+1935,Cathay Pacific Airways
+1936,Korean Air Lines
+1937,Interglobe Aviation
+1938,JetBlue Airways
+1939,Spring Airlines
+1940,Juneyao Airlines
+1941,Allegiant Travel
+1942,China Southern Airlines
+1943,China Airlines
+1944,Alaska Air Group
+1945,Bharat Petroleum Corporation Ltd
+1946,HUAYU Automotive Systems Co Ltd
+1947,Antero Midstream Corp
+1948,DT Midstream Inc
+1949,Hess Midstream LP
+1950,Spirit Airlines
+1951,Frontier Group Holdings
+1952,Ciena Corp
+1953,Bridge Investment Group Holdings Inc
+1954,China Securities Co Ltd
+1955,Haitong Securities Co Ltd
+1956,Landstar System Inc
+1957,Avangrid Inc
+1958,Showa Shell Sekiyu
+1959,CA Technologies
+1960,Intellia Therapeutics Inc
+1961,Live Oak Bancshares Inc
+1962,Fulton Financial Corp
+1963,Flywire Corp
+1964,Clean Harbors Inc
+1965,Pargesa
+1966,CMC Materials Inc
+1967,Bumble Inc
+1968,Toyota Industries Corp
+1969,Chow Tai Fook Jewellery Group Ltd
+1970,Kabel Deutschland Holding AG
+1971,Diodes Inc
+1972,Cirrus Logic Inc
+1973,Lattice Semiconductor Corp
+1974,Semtech Corp
+1975,Realtek Semiconductor Corp
+1976,Maxlinear Inc
+1977,Montage Technology Co Ltd
+1978,Synaptics Inc
+1979,China Resources Microelectronics Ltd
+1980,Tower Semiconductor Ltd
+1981,Axcelis Technologies Inc
+1982,Country Garden Holdings Co Ltd
+1983,MGIC Investment Corp
+1984,New India Assurance Company
+1985,Ubiquiti Inc
+1986,MMG
+1987,Sibanye Stillwater
+1988,Premier Inc
+1989,Encompass Health Corp
+1990,Tenet Healthcare Corp
+1991,LHC Group Inc
+1992,Option Care Health Inc
+1993,Surgery Partners Inc
+1994,Ubisoft Entertainment SA
+1995,Kingfa Sci & Tec Co.
+1996,Atul
+1997,H.B. Fuller
+1998,OCI
+1999,Jiangsu Cnano Technology
+2000,NOF Corp
+2001,Eicher Motors
+2002,Hero MotoCorp
+2003,National Fuel Gas Co
+2004,Fujian Kuncai Material
+2005,Nizhnekamskneftekhim
+2006,Guangdong Fangyuan Environment Co.
+2007,Tangshan Sanyou Chemical Industries
+2008,Zeon Corporation
+2009,Vinati Organics
+2010,Hanjin Kal
+2011,SK Innovation Co Ltd
+2012,Murphy Usa Inc
+2013,Southwest Gas Holdings Inc
+2014,PDC Energy Inc
+2015,New Fortress Energy Inc
+2016,Matador Resources Co
+2017,Spire Inc
+2018,Truist Financial
+2019,Air Lease Corp
+2020,Rogers Corp
+2021,UWM Holdings Corp
+2022,Janus Henderson Group PLC
+2023,GF Securities Co Ltd
+2024,China Cinda Asset Management Co Ltd
+2025,Xp Inc
+2026,Flowers Foods Inc
+2027,American Eagle Outfitters Inc
+2028,Crocs Inc
+2029,Wolverine World Wide Inc
+2030,Levi Strauss & Co
+2031,Concho Resources
+2032,MasTec Inc
+2033,RH
+2034,Williams-Sonoma Inc
+2035,Corporacion Acciona Energias Renovables SA
+2036,Columbia Financial Inc
+2037,Owl Rock Capital Corp
+2038,Golub Capital Bdc Inc
+2039,First Midwest Bancorp Inc
+2040,Bajaj Finance Ltd
+2041,Columbia Banking System Inc
+2042,WSFS Financial Corp
+2043,Shift4 Payments Inc
+2044,Euronet Worldwide Inc
+2045,Paymentus Holdings Inc
+2046,Amdocs Ltd
+2047,Pegasystems Inc
+2048,Altair Engineering Inc
+2049,Microstrategy Inc
+2050,CRRC Corp Ltd
+2051,Casella Waste Systems Inc
+2052,ENN Energy Holdings Ltd
+2053,MonotaRO Co Ltd
+2054,China Coal Energy Co Ltd
+2055,Flagstar Bancorp Inc
+2056,Frontier Communications Parent Inc
+2057,Telefonica Brasil SA
+2058,China Shipbuilding Industry Co Ltd
+2059,Jiangyin Hengrun Heavy Industries Co.
+2060,TFS Financial Corp
+2061,PennyMac Financial Services Inc
+2062,Unipol Gruppo
+2063,Inari Medical Inc
+2064,Medpace Holdings Inc
+2065,LivaNova PLC
+2066,China Feihe Ltd
+2067,Chemed Corp
+2068,Want Want China Holdings Ltd
+2069,US Foods Holding Corp
+2070,Performance Food Group Co
+2071,Dali Foods Group Co Ltd
+2072,New Relic Inc
+2073,Victoria's Secret & Co
+2074,UniFirst Corp
+2075,Silicon Laboratories Inc
+2076,Ambarella Inc
+2077,United Microelectronics Corp
+2078,China Vanke Co Ltd
+2079,LGI Homes Inc
+2080,Newmark Group Inc
+2081,MDC Holdings Inc
+2082,KB Home
+2083,Hecla Mining
+2084,Gentherm Inc
+2085,Watts Water Technologies Inc
+2086,Fiat Chrysler
+2087,Primerica
+2088,Talanx
+2089,Endeavor Group Holdings Inc
+2090,Shanghai Electric Group Co Ltd
+2091,Nova Ltd
+2092,Commercial Metals
+2093,Nanjing Iron & Steel Company
+2094,Chongqing Iron & Steel
+2095,Fushun Special Steel
+2096,Aperam
+2097,Ta Chen Stainless Pipe
+2098,Grupo Simec
+2099,China United Network Communications Ltd
+2100,Taiwan Mobile Co Ltd
+2101,DOWA Holdings
+2102,Nickel Mines
+2103,SSR Mining
+2104,Evolution Mining
+2105,Yunnan Chihong Zinc & Germanium
+2106,CNO Financial Group
+2107,Madison Square Garden Entertainment Corp
+2108,Amedisys Inc
+2109,Synlab AG
+2110,Vantage Towers AG
+2111,Lenovo Group Ltd
+2112,Howmet Aerospace Inc
+2113,ShanXi Coking Company
+2114,Scotts Miracle-Gro Co
+2115,Akron
+2116,Braskem
+2117,Organon & Co
+2118,CureVac NV
+2119,Shanghai Pharmaceuticals Holding Co Ltd
+2120,Sun Pharmaceutical Industries Ltd
+2121,Sarepta Therapeutics Inc
+2122,Eastroc Beverage Group Co Ltd
+2123,Cabot Corp
+2124,Tronox Holdings PLC
+2125,Jiangsu SOPO Chemical Co.
+2126,One 97 Communications Ltd
+2127,Valaris Ltd
+2128,Quantumscape Corp
+2129,Adani Green Energy Ltd
+2130,ZTE Corp
+2131,Hamilton Lane Inc
+2132,Grupo Bimbo SAB de CV
+2133,Barito Pacific
+2134,Dillard's Inc
+2135,National Vision Holdings Inc
+2136,Cricut Inc
+2137,GMS Inc
+2138,Jet2
+2139,Haier Smart Home Co Ltd
+2140,Armstrong World Industries Inc
+2141,Tempur Sealy International Inc
+2142,Helen of Troy Ltd
+2143,Weber Inc
+2144,Portland General Electric Co
+2145,StepStone Group Inc
+2146,Wintrust Financial Corp
+2147,Independent Bank Group Inc
+2148,Investors Bancorp Inc
+2149,Webster Financial Corp
+2150,United Bankshares Inc
+2151,Cohen & Steers Inc
+2152,PacWest Bancorp
+2153,Simmons First National Corp
+2154,International Bancshares Corp
+2155,UMB Financial Corp
+2156,Appfolio Inc
+2157,Wan Hai Lines Ltd
+2158,Schneider National Inc
+2159,ArcBest Corp
+2160,JD Logistics Inc
+2161,ZIM Integrated Shipping Services Ltd
+2162,China CSSC Holdings Ltd
+2163,Ryder System Inc
+2164,Atlas Air Worldwide Holdings Inc
+2165,Saia Inc
+2166,XPO Logistics Inc
+2167,Triton International Ltd
+2168,COSCO SHIPPING Development Co Ltd
+2169,Evergreen Marine Corp Taiwan Ltd
+2170,Yang Ming Marine Transport Corp
+2171,Marqeta Inc
+2172,Thai Beverage PCL
+2173,Arca Continental SAB de CV
+2174,National Beverage Corp
+2175,Essent Group Ltd
+2176,Atlantica Sustainable Infrastructure PLC
+2177,EnBW Energie Baden Wuerttemberg AG
+2178,EnerSys
+2179,China Resources Gas Group Ltd
+2180,China Longyuan Power Group Corp Ltd
+2181,Huaneng Power International Inc
+2182,Idacorp Inc
+2183,CPFL Energia SA
+2184,CEZ as
+2185,Centrais Eletricas Brasileiras SA
+2186,CGN Power Co Ltd
+2187,Ormat Technologies Inc
+2188,Bloom Energy Corp
+2189,Porto Seguro
+2190,China Taiping Insurance Holdings
+2191,Kemper
+2192,American National Group
+2193,Skandinaviska Enskilda Banken AB
+2194,On Holding AG
+2195,Indutrade AB
+2196,Ameresco Inc
+2197,SunPower Corp
+2198,Hayward Holdings Inc
+2199,Weichai Power Co Ltd
+2200,Grupo Catalana Occidente
+2201,Max Financial Services
+2202,Powszechny Zaklad Ubezpieczen
+2203,Rand Merchant Investment Holdings
+2204,Samsung Fire & Marine Insurance
+2205,BRP Group
+2206,The Hanover Insurance Group
+2207,China Reinsurance Group
+2208,Hiscox
+2209,Cytek Biosciences Inc
+2210,Tandem Diabetes Care Inc
+2211,Mirati Therapeutics Inc
+2212,ICU Medical Inc
+2213,STAAR Surgical Co
+2214,Multiplan Corp
+2215,Blueprint Medicines Corp
+2216,Bruker Corp
+2217,ICON PLC
+2218,Neogen Corp
+2219,Conmed Corp
+2220,Quidel Corp
+2221,Shockwave Medical Inc
+2222,Nevro Corp
+2223,Cytokinetics Inc
+2224,Haemonetics Corp
+2225,Inspire Medical Systems Inc
+2226,Maravai LifeSciences Holdings Inc
+2227,PTC Therapeutics Inc
+2228,Vitrolife AB
+2229,SAGE Therapeutics Inc
+2230,Blackline Inc
+2231,Fastly Inc
+2232,Nutanix Inc
+2233,Exlservice Holdings Inc
+2234,Qualtrics International Inc
+2235,Digital Turbine Inc
+2236,Perficient Inc
+2237,Box Inc
+2238,Verbund AG
+2239,Hilton Grand Vacations Inc
+2240,Pilgrim's Pride Corporation
+2241,Uni-President Enterprises Corp
+2242,China Mengniu Dairy Co Ltd
+2243,Ionis Pharmaceuticals Inc
+2244,Adaptive Biotechnologies Corp
+2245,Grand Canyon Education Inc
+2246,Bright Horizons Family Solutions Inc
+2247,Coursera Inc
+2248,nCino Inc
+2249,EngageSmart Inc
+2250,Duck Creek Technologies Inc
+2251,Blackbaud Inc
+2252,Procore Technologies Inc
+2253,Livent Corp
+2254,Copa Holdings
+2255,Fubotv Inc
+2256,Envista Holdings Corp
+2257,Western Mining Co.
+2258,China Petrochemical Development Corp.
+2259,NU Skin Enterprises Inc
+2260,Dabur India Ltd
+2261,Olaplex Holdings Inc
+2262,Papa John's International Inc
+2263,Wingstop Inc
+2264,Texas Roadhouse Inc
+2265,Hain Celestial Group Inc
+2266,Lancaster Colony Corp
+2267,Seaboard Corp
+2268,Sanderson Farms Inc
+2269,Simply Good Foods Co
+2270,Guangzhou Kingmed Diagnostics Group Co Ltd
+2271,Lumentum Holdings Inc
+2272,Fabrinet
+2273,CP All PCL
+2274,Gold Fields
+2275,Endeavour Mining Corp
+2276,BB Seguridade Participacoes
+2277,Britannia Industries Ltd
+2278,People's Insurance Company of China
+2279,Cathay Financial Holding Co.
+2280,Fubon Financial Holding Co.
+2281,HDFC Life Insurance Company
+2282,Topdanmark
+2283,Athene Holding
+2284,China Pacific Insurance Co.
+2285,SBI Life Insurance Company
+2286,Littelfuse Inc
+2287,Havells India Ltd
+2288,Deckers Outdoor Corp
+2289,Eagle Materials Inc
+2290,Taiwan Cement Corp
+2291,China Jushi Co Ltd
+2292,Carlisle Companies Inc
+2293,Graco Inc
+2294,Arcosa Inc
+2295,Anhui Conch Cement Co Ltd
+2296,China Steel Corp
+2297,JSW Steel
+2298,Posco
+2299,Acerinox
+2300,Herc Holdings Inc
+2301,Ningbo Boway Alloy Material
+2302,Alcoa Corp
+2303,Alrosa
+2304,Constellium
+2305,Xinyu Iron & Steel Co.
+2306,Hainan Mining
+2307,Liontown Resources
+2308,Outokumpu Oyj
+2309,Zhaojin Mining Industry
+2310,Northam Platinum
+2311,Industrias CH
+2312,Solar Industries
+2313,Cleveland-Cliffs Inc
+2314,Polymetal International PLC
+2315,AngloGold Ashanti
+2316,Pretium Resources
+2317,Huaibei Mining Holdings Co.
+2318,Henan Zhongfu Industrial Co.
+2319,Zijin Mining Group
+2320,Jiangsu Dingsheng New Energy Materials
+2321,Magnitogorsk Iron and Steel Works
+2322,Korea Zinc
+2323,Reliance Steel & Aluminum Co
+2324,Press Metal Aluminium Holdings
+2325,First Majestic Silver Corp
+2326,Inner Mongolia ERDOS Resources
+2327,ZhongAn Online P & C Insurance
+2328,Shin Kong Financial Holding
+2329,Uniqa Insurance Group
+2330,ALM. Brand
+2331,Beazley
+2332,CNA Financial Corporation
+2333,Maruti Suzuki
+2334,Freshworks Inc
+2335,Samsung Electro-Mechanics Co Ltd
+2336,Tech Mahindra Ltd
+2337,Universal Display Corp
+2338,Evolent Health Inc
+2339,Omnicell Inc
+2340,Integer Holdings Corp
+2341,Rackspace Technology Inc
+2342,Jabil Inc
+2343,Novatek Microelectronics Corp
+2344,NCR Corp
+2345,Quanta Computer Inc
+2346,Sanmina Corp
+2347,Allscripts Healthcare Solutions Inc
+2348,Dun & Bradstreet Holdings Inc
+2349,Vertiv Holdings Co
+2350,Maximus Inc
+2351,Epiroc AB
+2352,Revolve Group Inc
+2353,Adevinta ASA
+2354,Owens & Minor Inc
+2355,agilon health Inc
+2356,JD Health International Inc
+2357,Bigcommerce Holdings Inc
+2358,Opendoor Technologies Inc
+2359,Taylor Morrison Home Corp
+2360,Select Medical Holdings Corp
+2361,Israel Corporation
+2362,Vishay Intertechnology Inc
+2363,Shandong Gold Mining
+2364,OPKO Health Inc
+2365,Line
+2366,Lifan Group
+2367,TVS Motor Company
+2368,Clean Science & Technology
+2369,Carborundum Universal
+2370,Hoshine Silicon Industry
+2371,Bluestar Adisseo
+2372,Tokai Carbon
+2373,Victrex
+2374,Chemours
+2375,Organicheskiy Sintez Kazan
+2376,Gujarat Fluorochemicals
+2377,Deepak Nitrite
+2378,Sumitomo Bakelite Company
+2379,UPL
+2380,Sichuan Hebang Biotechnology
+2381,Ningxia Baofeng Energy Group
+2382,Coromandel International
+2383,Hexpol
+2384,Olin Corp
+2385,Kumho Petro Chemical
+2386,Formosa Chemicals & Fibre Corp
+2387,Aarti Industries
+2388,DIC Corporation
+2389,Wacker Chemie
+2390,Huntsman Corp
+2391,Applied Industrial Technologies Inc
+2392,EMCOR Group Inc
+2393,McKesson Europe AG
+2394,Chegg Inc
+2395,SLM Corp
+2396,Dlocal Ltd
+2397,Dongfeng Motor Group
+2398,BAIC BluePark New Energy
+2399,Trigano
+2400,BAIC Motor
+2401,Aptargroup Inc
+2402,GATX Corp
+2403,Tongwei Co Ltd
+2404,TriNet Group Inc
+2405,Noble Energy
+2406,Remitly Global Inc
+2407,Longfor Group Holdings Ltd
+2408,Cushman & Wakefield PLC
+2409,JDE Peets NV
+2410,Celsius Holdings Inc
+2411,Skshu Paint Co.
+2412,Berger Paints
+2413,Asian Paints
+2414,Stem Inc
+2415,South Jersey Industries Inc
+2416,Raspadskaya
+2417,Vienna Insurance Group
+2418,Steadfast Group
+2419,Harel Insurance Investments and Financial Services
+2420,SPX Corp
+2421,Resideo Technologies Inc
+2422,Franklin Electric Co Inc
+2423,Mueller Industries Inc
+2424,Oshkosh Corp
+2425,Core & Main Inc
+2426,Chart Industries Inc
+2427,Donaldson Company Inc
+2428,Timken Co
+2429,Gates Industrial Corporation PLC
+2430,Evoqua Water Technologies Corp
+2431,Crane Co
+2432,RBC Bearings Inc
+2433,Zhuzhou CRRC Times Electric Co Ltd
+2434,MSC Industrial Direct Co Inc
+2435,Jiangsu Hengli Hydraulic Co Ltd
+2436,Hillenbrand Inc
+2437,Brunswick Corp
+2438,Acciona SA
+2439,Barnes Group Inc
+2440,Helios Technologies Inc
+2441,Storebrand
+2442,NuVasive Inc
+2443,Figs Inc
+2444,Huazhu Group Ltd
+2445,Inner Mongolia Yili Industrial Group Co Ltd
+2446,ChemoCentryx Inc
+2447,Zhangzhou Pientzehuang Pharmaceutical Co Ltd
+2448,ACADIA Pharmaceuticals
+2449,Guardant Health Inc
+2450,Shandong Weigao Group Medical Polymer Co Ltd
+2451,Hansoh Pharmaceutical Group Company Ltd
+2452,Hangzhou Tigermed Consulting Co Ltd
+2453,Arvinas Inc
+2454,Ultragenyx Pharmaceutical Inc
+2455,Arena Pharmaceuticals Inc
+2456,Merit Medical Systems Inc
+2457,Nektar Therapeutics
+2458,Guangzhou Baiyunshan Pharmaceutical Holdings Co Ltd
+2459,Arrowhead Pharmaceuticals Inc
+2460,BioCryst Pharmaceuticals Inc
+2461,iRhythm Technologies Inc
+2462,Harmony Biosciences Holdings Inc
+2463,Amicus Therapeutics Inc
+2464,PPD Inc
+2465,Syneos Health Inc
+2466,Insmed Inc
+2467,Biohaven Pharmaceutical Holding Company Ltd
+2468,TG Therapeutics Inc
+2469,Ligand Pharmaceuticals Inc
+2470,Abcellera Biologics
+2471,CareDx Inc
+2472,Exelixis Inc
+2473,Halozyme Therapeutics Inc
+2474,Immunitybio Inc
+2475,Pacira Biosciences Inc
+2476,Intra-Cellular Therapies Inc
+2477,Penumbra Inc
+2478,SK Bioscience Co Ltd
+2479,Ortho Clinical Diagnostics Holdings PLC
+2480,Veracyte Inc
+2481,Shanghai Fosun Pharmaceutical Group Co Ltd
+2482,Vir Biotechnology Inc
+2483,Zurn Water Solutions Corp
+2484,Choice Hotels International Inc
+2485,Hanjaya Mandala Sampoerna Tbk PT
+2486,Red Rock Resorts Inc
+2487,Reynolds Consumer Products Inc
+2488,eXp World Holdings Inc
+2489,Redfin Corp
+2490,Chongqing Brewery Co Ltd
+2491,China Resources Beer Holdings Co Ltd
+2492,Ambev SA
+2493,Shede Spirits Co Ltd
+2494,Tsingtao Brewery Co Ltd
+2495,Duckhorn Portfolio Inc
+2496,Boston Beer Company Inc
+2497,China Resources Power Holdings Co Ltd
+2498,Hawaiian Electric Industries Inc
+2499,New Jersey Resources Corp
+2500,Howard Hughes Corp
+2501,Medifast Inc
+2502,NovaGold Resources
+2503,Red Avenue New Materials
+2504,Nan Ya Plastics
+2505,Indorama Ventures
+2506,Lotte Chemical
+2507,Zhejiang Juhua
+2508,Quaker Chemical Corporation
+2509,Sichuan EM Technology Company
+2510,Valvoline
+2511,Sensient Technologies Corp
+2512,CNSIG Inner Mongolia Chemical Industry
+2513,Showa Denko
+2514,Kansai Nerolac Paints
+2515,HuBei XingFa Chemical Group
+2516,Jiangsu Yangnong Chemical Co.
+2517,Suzhou Nanomicro Technology
+2518,Yum China Holdings Inc
+2519,Atkore Inc
+2520,Mineral Resources
+2521,NMDC
+2522,Gerdau SA
+2523,Lamb Weston Holdings Inc
+2524,Goodrx Holdings Inc
+2525,LG Innotek Co Ltd
+2526,3D Systems
+2527,Globant SA
+2528,II-VI Inc
+2529,Sunny Optical Technology Group Co Ltd
+2530,Gongniu Group Co Ltd
+2531,President Chain Store Corp
+2532,Dino Polska SA
+2533,Avenue Supermarts Ltd
+2534,Sinopec Shanghai Petrochemical Co Ltd
+2535,Ingevity Corp
+2536,GCP Applied Technologies Inc
+2537,Befar Group
+2538,Taiwan Fertilizer
+2539,Avient Corp
+2540,Stepan Co
+2541,Anhui Guangxin Agrochemical Co.
+2542,Haidilao International Holding Ltd
+2543,Tootsie Roll Industries Inc
+2544,Planet Fitness Inc
+2545,Graham Holdings Co
+2546,China Railway Construction Corp Ltd
+2547,Tata Steel
+2548,APL Apollo Tubes
+2549,Severstal
+2550,Fangda Special Steel Technology
+2551,Ternium
+2552,Baoshan Iron & Steel
+2553,Novolipetsk Steel
+2554,Steel Authority of India
+2555,SSAB
+2556,Jindal Steel And Power
+2557,Hindustan Zinc
+2558,Stelco Holdings
+2559,Angang Steel
+2560,Shandong Iron and Steel
+2561,USIMINAS (Usinas Siderurgicas de Minas Gerais)
+2562,ITT Inc
+2563,Colfax Corp
+2564,MSA Safety Inc
+2565,Sany Heavy Industry Co Ltd
+2566,Trinity Industries Inc
+2567,SPX FLOW Inc
+2568,TechTarget Inc
+2569,Kakao Corp
+2570,Angi Inc
+2571,General Insurance Corporation of India
+2572,Assured Guaranty
+2573,New China Life Insurance Co.
+2574,ASR Nederland
+2575,ICICI Lombard General Insurance Company
+2576,Sanlam
+2577,ICICI Prudential Life Insurance
+2578,Great Eastern
+2579,Samsung Life Insurance
+2580,Houlihan Lokey Inc
+2581,OneMain Holdings Inc
+2582,Asbury Automotive Group Inc
+2583,Li Auto
+2584,Dorman Products Inc
+2585,Kia
+2586,Lithia Motors Inc
+2587,R1 RCM Inc
+2588,MKS Instruments Inc
+2589,Thoughtworks Holding Inc
+2590,Kinsale Capital Group
+2591,American States Water Co
+2592,Post Holdings Inc
+2593,CarGurus Inc
+2594,Farfetch Ltd
+2595,Xometry Inc
+2596,Century Communities Inc
+2597,Central Garden & Pet Co
+2598,CorVel Corp
+2599,NTPC Ltd
+2600,Advantech Co Ltd
+2601,Hapag Lloyd AG
+2602,Kirby Corp
+2603,Sprouts Farmers Market Inc
+2604,Watsco Inc
+2605,Hubbell Inc
+2606,Shanghai Baosight Software Co Ltd
+2607,Global-E Online Ltd
+2608,Bottomline Technologies Inc
+2609,Aspen Technology Inc
+2610,Paylocity Holding Corp
+2611,Verint Systems Inc
+2612,WEX Inc
+2613,Envestnet Inc
+2614,Grid Dynamics Holdings Inc
+2615,Dolby Laboratories Inc
+2616,Q2 Holdings Inc
+2617,Smartsheet Inc
+2618,Upwork Inc
+2619,Datto Holding Corp
+2620,FormFactor Inc
+2621,Kingdee International Software Group Co Ltd
+2622,Viavi Solutions Inc
+2623,Nanya Technology Corp
+2624,SolarWinds Corp
+2625,Teradata Corp
+2626,Five9 Inc
+2627,Manhattan Associates Inc
+2628,Toast Inc
+2629,Pure Storage Inc
+2630,Momentive Global Inc
+2631,UiPath Inc
+2632,LivePerson Inc
+2633,Instructure Holdings Inc
+2634,Advanced Energy Industries Inc
+2635,Sprinklr Inc
+2636,Appian Corp
+2637,DoubleVerify Holdings Inc
+2638,TTEC Holdings Inc
+2639,Larsen & Toubro Infotech Ltd
+2640,Samsung SDS Co Ltd
+2641,Genpact Ltd
+2642,Jamf Holding Corp
+2643,Polyus PJSC
+2644,Impala Platinum Holdings
+2645,Jinduicheng Molybdenum
+2646,Royal Gold
+2647,Kumba Iron Ore
+2648,Centerra Gold
+2649,Jiangxi Copper
+2650,China Hongqiao Group
+2651,Paysafe Ltd
+2652,Santander Consumer USA Holdings Inc
+2653,Beijing-Shanghai High Speed Railway Co Ltd
+2654,Stevanato Group SpA
+2655,Sotera Health Co
+2656,Rusal
+2657,Aluminum Corp of China
+2658,Orocobre
+2659,B2Gold Corp
+2660,Industrias Penoles
+2661,Hyundai Steel Co
+2662,China Molybdenum
+2663,En+ Group
+2664,Aurubis
+2665,Vedanta
+2666,Maanshan Iron & Steel
+2667,Harmony Gold Mining Company
+2668,Leslie's Inc
+2669,EchoStar Corp
+2670,Oppein Home Group Inc
+2671,Boise Cascade Co
+2672,Louisiana-Pacific Corp
+2673,Builders FirstSource Inc
+2674,NCSOFT Corp
+2675,Bilibili Inc
+2676,OZ Minerals
+2677,KGHM Polska Miedz
+2678,Natera Inc
+2679,LG Corp
+2680,Avis Budget Group Inc
+2681,Luminar Technologies Inc
+2682,Veoneer Inc
+2683,Yulon Nissan Motor
+2684,Geely Automobile Holdings
+2685,AIMA Technology Group
+2686,Thor Industries Inc
+2687,Localiza Rent a Car SA
+2688,SAIC Motor
+2689,Mahindra & Mahindra
+2690,Hyundai Motor
+2691,Chongqing Sokon Industry Group
+2692,Hyundai Mobis Co Ltd
+2693,Anhui Jianghuai Automobile Group (JAC Motors)
+2694,Astra International
+2695,Tata Motors
+2696,AMN Healthcare Services Inc
+2697,Mimecast Ltd
+2698,CACI International Inc
+2699,Varonis Systems Inc
+2700,SentinelOne Inc
+2701,Rapid7 Inc
+2702,Knowbe4 Inc
+2703,Mandiant Inc
+2704,Netscout Systems Inc
+2705,Liberty Latin America Ltd
+2706,D'Ieteren Group NV
+2707,Five Below Inc
+2708,GameStop Corp
+2709,SiteOne Landscape Supply Inc
+2710,Pop Mart International Group Ltd
+2711,Beacon Roofing Supply Inc
+2712,New York Times Co
