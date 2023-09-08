@@ -11,9 +11,9 @@ unzip ./backend/app/model_resources/impaakt.zip
 docker compose -f "docker-compose.d`
 ```
 ## API 
-This API allows to create literature triage jobs for the Cellosaurus knowledge resources on cell lines. Publication relevancy scores are calcultated using state-of-the art language models, fine-tuned for the triage of both abstracts and full-text.
+This API allows to create literature triage jobs for the Cellosaurus knowledge resource on cell lines. Article relevancy scores are estimated using state-of-the art language models, fine-tuned for the triage of both abstracts and fulltext.
 
-### Job creation endpoint
+### Job Create endpoint
 **URL:** POST [/api/job](/api/job)
 Create a CellTriage job including a list of candicate articles. Each article must include a pmid. The articles will be scored for relevancy for Cellosaurus curation.
 
