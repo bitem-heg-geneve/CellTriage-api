@@ -31,7 +31,8 @@ def create_job(
     """\
     Create a CellTriage job including a list of candicate articles. Each article must include a pmid. The articles will be scored for relevancy for Cellosaurus curation.\n
     
-    By default the system will attempt to extract the fulltext from PubMed Central. If this is not possible then the text will be exracted from the article abstract only. If the job -option "use_fulltext" is set false then the text will be retrieved from the abstract for all articles.\n
+    By default the system will attempt to extract the fulltext from PubMed Central. If this is not possible then the text will be exracted from the article abstract only. If the job -option "use_fulltext" is set to false then the text will be retrieved from the abstract for all articles.\n 
+     
     
     """
     job = crud.job.create(db=db, obj_in=job_in)
