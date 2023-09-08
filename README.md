@@ -41,7 +41,7 @@ Example request body:
 The article scores can be used to rank articles by estimated triage relavancy.
 Text_source denotes if the text was retrieved from a the article abstract of from fulltext.
 
-Example response
+Example response:
 ```
 {
   "id": 0,
