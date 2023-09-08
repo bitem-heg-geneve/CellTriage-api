@@ -2,13 +2,12 @@ from pydantic import BaseModel, HttpUrl, Field, validator
 
 from typing import Sequence, List, Union
 from datetime import datetime
-from app.schemas.source import Source
+from app.schemas.article import Article
 from fastapi import Query
 from typing import Optional, Dict
 from datetime import datetime
 
-# from app.models.source import Source
-from app.schemas.source import SourceCreate
+from app.schemas.article import ArticleCreate, ArticleUpdate
 from pydantic import root_validator
 
 
@@ -17,40 +16,23 @@ class JobBase(BaseModel):
 
 
 class JobCreate(JobBase):
-    impaakt_ranking: bool = Field(default=True)
-    named_entity_recognition: bool = Field(default=True)
-    company_classification: bool = Field(default=True)
-    sources: List[SourceCreate] = Field(
+    use_fulltext: bool = Field(default=True)
+    article_set: List[ArticleCreate] = Field(
         example=[
-            SourceCreate(url="https://www.occ.gov/news-issuances/news-releases/2011/nr-occ-2011-47c.pdf"),
-            SourceCreate(
-                url="https://www.pionline.com/esg/dws-sell-excessive-greenwashing-doubt-citi-analysts-say"
-            ),
-            SourceCreate(
-                url="https://www.cnn.com/markets/fear-and-greed"
-            ),
-            SourceCreate(
-                url="https://time.com/personal-finance/article/how-many-stocks-should-i-own/"
-            ),
-            SourceCreate(
-                url="https://wallethub.com/answers/cc/citibank-credit-balance-refund-2140740558/"
-            ),
-            SourceCreate(
-                url="https://www.cnn.com/2021/02/16/business/citibank-revlon-lawsuit-ruling/index.html"
-            ),
-            SourceCreate(
-                url="https://www.businessinsider.com/citi-analysts-excessive-corporate-leverage-2018-11/"
-            ),
-            SourceCreate(
-                url="https://en.wikipedia.org/wiki/Citibank"
-            ),
-            SourceCreate(
-                url="https://www.propublica.org/article/citi-execs-deeply-sorry-but-dont-blame-us2"
-            ),
-            SourceCreate(
-                url="https://www.cnbc.com/2023/01/11/citi-names-two-asset-classes-to-deploy-excess-cash-for-higher-returns-.html"
-            ),
-            SourceCreate(url="https://www.mckinsey.com/industries/financial-services/our-insights/global-banking-annual-review"),
+            # ArticleCreate(pmid=14691011),
+            # ArticleCreate(pmid=25190367),
+            ArticleCreate(pmid=36585756),
+            ArticleCreate(pmid=36564873),
+            ArticleCreate(pmid=35985809),
+            ArticleCreate(pmid=34915666),
+            ArticleCreate(pmid=35183060),
+            ArticleCreate(pmid=10390151),
+            ArticleCreate(pmid=31654625),
+            ArticleCreate(pmid=31678775),
+            ArticleCreate(pmid=31741260),
+            ArticleCreate(pmid=32289117),
+            
+            
         ],
         default=[],
     )
@@ -65,9 +47,7 @@ class JobUpdate(JobBase):
 # Properties shared by models stored in DB
 class JobInDBBase(JobBase):
     id: int
-    impaakt_ranking: bool = Field(default=True)
-    named_entity_recognition: bool = Field(default=True)
-    company_classification: bool = Field(default=True)
+    use_fulltext: bool = Field(default=True)
     status: str = Field(default="pending")
     job_created_at: datetime = Field(default=datetime.now())
     process_start_at: Optional[datetime] = None
@@ -101,7 +81,7 @@ class JobInDBBase(JobBase):
 
 # Properties to return to client
 class Job(JobInDBBase):
-    sources: List[Source]
+    article_set: List[Article]
 
 
 # Status to return to client

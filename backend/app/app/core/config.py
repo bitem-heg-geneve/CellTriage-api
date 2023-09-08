@@ -14,7 +14,7 @@ def route_task(name, args, kwargs, options, task=None, **kw):
     if ":" in name:
         queue, _ = name.split(":")
         return {"queue": queue}
-    return {"queue": "ingress"}
+    return {"queue": "default"}
 
 
 class Settings(BaseSettings):
@@ -66,7 +66,7 @@ class Settings(BaseSettings):
         # need to define default queue here or exception would be raised
         Queue("default"),
         Queue("ingress"),
-        Queue("torch"),
+        Queue("infer"),
     )
 
     CELERY_TASK_ROUTES = (route_task,)

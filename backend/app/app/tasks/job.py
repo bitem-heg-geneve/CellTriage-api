@@ -5,13 +5,15 @@ from datetime import datetime
 import httpx
 from app.models.job import Job
 from app.schemas.job import JobUpdate
-from app.schemas.source import SourceUpdate
+# from app.schemas.source import SourceUpdate
+from app.schemas.article import ArticleUpdate
 from app import crud
 from app.api import deps
 from sqlalchemy.orm import Session
 from app.api import deps
 from app.db.session import SessionLocal
-from app.schemas import Source
+# from app.schemas import Source
+# from app.schemas import Article
 
 # from celery.result import AsyncResult
 from celery import chord

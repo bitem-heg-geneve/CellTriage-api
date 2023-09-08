@@ -21,7 +21,7 @@ root_router = APIRouter()
 
 def create_app() -> FastAPI:
     app = FastAPI(
-        title="Impaakt API", openapi_url=f"{settings.API_V1_STR}/openapi.json"
+        title="CellTriage API", openapi_url=f"{settings.API_V1_STR}/openapi.json"
     )
     app.celery_app = create_celery()
     return app
