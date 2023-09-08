@@ -25,6 +25,7 @@ services:
     volumes:
       - ./backend/app:/app
       - ./backend/assets:/assets
+      - ./model_resources:/model_resources
     env_file:
       - ./compose/.env.dev
     command:  /app/run.sh
@@ -42,10 +43,6 @@ services:
     command: celery flower # This will execute flower.
     env_file:
       - ./compose/.env.dev
-    # environment:
-    #   - CELERY_BROKER_URL=<broker-url>
-    #   - FLOWER_PORT=<port-you-want-to-use-for-flower>
-    # ports: - <flower-port>:<flower-port> # docker will expose this ports for flower
     ports: 
       - 5555:5555 # docker will expose this ports for flower
     depends_on:
@@ -53,15 +50,16 @@ services:
       - db
     restart: always
 
+
   worker-ingress:
     build:
       context: .
       dockerfile: ./compose/local/pytorch/Dockerfile
     image: worker_ingress
-    # command: /start-worker-ingress
     command: python -m debugpy --listen 0.0.0.0:5671 -m celery -A app.main.celery worker --loglevel=info -Q ingress --hostname=ingress@%h
     volumes:
       - ./backend/app:/app
+      - ./model_resources:/model_resources
     ports:
       - 5671:5671
     env_file:
@@ -69,47 +67,51 @@ services:
     depends_on:
       - redis
       - db
-      - api
     restart: always
     deploy:
       replicas: 1
 
 
-  worker-torch:
+  worker-infer:
     build:
       context: .
       dockerfile: ./compose/local/pytorch/Dockerfile
-    image: worker_torch
-    command: python -m debugpy --listen 0.0.0.0:5672 -m celery -A app.main.celery worker --loglevel=info -Q torch --hostname=torch@%h --pool=solo 
+    image: worker_infer
+    command: python -m debugpy --listen 0.0.0.0:5672 -m celery -A app.main.celery worker --loglevel=info -Q infer --hostname=infer@%h --pool=solo 
     volumes:
       - ./backend/app:/app
+      - ./model_resources:/model_resources
     ports:
       - 5672:5672
     env_file:
       - ./compose/.env.dev
-    environment:
-      - LOAD_NER_MODEL=TRUE
     depends_on:
       - redis
       - db
-      - api
     restart: always
     ulimits:
       stack: 67108864
       memlock: -1
-    # deploy:
-    #   resources:
-    #     reservations:
-    #       devices:
-    #         - driver: nvidia
-    #           count: 1
-    #           capabilities: [gpu]
-      # replicas: 1
     deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
       replicas: 1
+    # deploy:
+    #   replicas: 1
     
 
 
 volumes:
   app-db-data:
 
+networks:
+  default:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/24
+          gateway: 172.20.0.1
