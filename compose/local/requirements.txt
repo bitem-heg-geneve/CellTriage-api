@@ -26,7 +26,7 @@ transformers==4.28.1
 nltk==3.8.1
 pandas==2.0.0
 redis==4.5.4
-orjson==3.9.7
+orjson==3.9.15
 asgiref==3.7.2
 aiostream==0.4.5
 aiohttp==3.8.5
