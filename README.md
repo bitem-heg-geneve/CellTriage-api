@@ -1,4 +1,4 @@
-# Impaakt API
+# CellTriageAPI
 
 ## Deployment
 ```
