@@ -8,6 +8,7 @@ class Article(Base):
     id = Column(Integer, primary_key=True, index=True)
     pmid = Column(Integer, nullable=False)
     pmcid = Column(String, nullable=True)
+    entrez_date = Column(String, nullable=True)
     text_source = Column(String, nullable=True)
     text = Column(String, nullable=True)
     score = Column(Float, nullable=True)

@@ -18,6 +18,7 @@ import aiohttp
 import threading
 
 MAX_INGRESS_CONCURRENCY = int(os.environ["MAX_INGRESS_CONCURRENCY"])
+SIBIlS_URL = os.environ["SIBILS_URL"]
 
 
 def async_wrap_iter(it):
@@ -89,8 +90,8 @@ def async_wrap_iter(it):
     
 
 class Sibils(object):
-    def __init__(self, max_concurrency):
-        self.api_url = "https://sibils.text-analytics.ch/api/"
+    def __init__(self, max_concurrency, sibils_url):
+        self.api_url = sibils_url
         self.max_concurency = max_concurrency
     
     async def _fetch_call(self, ids, col, session):
@@ -137,13 +138,13 @@ class Sibils(object):
         return res_dict
 
     
-    def fetch(self, ids, batch_size=50, col="medline"):
+    def fetch(self, ids, batch_size=200, col="medline"):
         # wrapper
         res = async_to_sync(self._fetch_async)(ids, batch_size, col)
         return res
     
 
-sibils_handler = Sibils(max_concurrency=MAX_INGRESS_CONCURRENCY)
+sibils_handler = Sibils(max_concurrency=MAX_INGRESS_CONCURRENCY, sibils_url=SIBIlS_URL)
 
 
             

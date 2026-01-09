@@ -13,11 +13,13 @@ class ArticleBase(BaseModel):
 class ArticleCreate(ArticleBase):
     pmid: int
 
+
 class ArticleUpdate(ArticleBase):
     pmcid: Optional[str] = None
+    entrez_date: Optional[str] = None
+    score: Optional[float] = None
     text_source: Optional[str] = None
     text: Optional[str] = None
-    score: Optional[float] = None
 
 
 # Properties shared by models stored in DB
@@ -39,9 +41,10 @@ class ArticleInDBBase(ArticleBase):
 # Properties to return to client
 class Article(ArticleInDBBase):
     pmcid: Optional[str] = None
+    entrez_date: Optional[str] = None
+    score: Optional[float] = None
     text_source: Optional[str] = None
     text: Optional[str] = None
-    score: Optional[float] = None
 
 
 # Properties properties stored in DB
