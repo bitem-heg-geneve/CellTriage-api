@@ -85,6 +85,8 @@ services:
       - 5672:5672
     env_file:
       - ./compose/.env.dev
+    environment:
+      LOAD_CT_TAGGER: yes
     depends_on:
       - redis
       - db
@@ -92,14 +94,14 @@ services:
     ulimits:
       stack: 67108864
       memlock: -1
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              count: 1
-              capabilities: [gpu]
-      replicas: 1
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           capabilities: [gpu]
+              # device: 0
+      # replicas: 1
     # deploy:
     #   replicas: 1
     
