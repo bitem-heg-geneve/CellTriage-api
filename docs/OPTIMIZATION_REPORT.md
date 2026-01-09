@@ -1,7 +1,6 @@
 # CellTriage API Performance Optimization Report
 
 **Date:** January 9, 2026
-**Author:** Paul van Rijen (with Claude Code assistance)
 
 ## Executive Summary
 
