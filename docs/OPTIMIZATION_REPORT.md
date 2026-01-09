@@ -102,15 +102,6 @@ The `--pool=solo` for inference is correct because:
 
 *Note: Total throughput is GPU-bound; CPU optimizations improve stability more than speed.*
 
-## Comparison with Other Triage APIs
-
-| System | Workers | Threads | Inference |
-|--------|---------|---------|-----------|
-| CellTriage | 4 ingress + 1 infer | 4 | GPU (solo) |
-| DisTriage | 4 combined | 4 | CPU |
-| BioMoQA | 4 combined | 12 | CPU |
-| IPBES | 4 combined | 12 | CPU |
-
 ## Conclusion
 
-The optimization brings CellTriage in line with the proven configurations used across other triage APIs, improving stability and resource utilization while maintaining GPU inference performance.
+The optimization improves stability and resource utilization while maintaining GPU inference performance.
