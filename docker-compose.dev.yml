@@ -56,7 +56,7 @@ services:
       context: .
       dockerfile: ./compose/local/pytorch/Dockerfile
     image: worker_ingress
-    command: python -m debugpy --listen 0.0.0.0:5671 -m celery -A app.main.celery worker --loglevel=info -Q ingress --hostname=ingress@%h
+    command: python -m debugpy --listen 0.0.0.0:5671 -m celery -A app.main.celery worker --loglevel=info -Q ingress --hostname=ingress@%h --concurrency=4 --prefetch-multiplier=1
     volumes:
       - ./backend/app:/app
       - ./model_resources:/model_resources
@@ -64,6 +64,10 @@ services:
       - 5671:5671
     env_file:
       - ./compose/.env.dev
+    environment:
+      OMP_NUM_THREADS: "4"
+      MKL_NUM_THREADS: "4"
+      TOKENIZERS_PARALLELISM: "false"
     depends_on:
       - redis
       - db
@@ -87,6 +91,9 @@ services:
       - ./compose/.env.dev
     environment:
       LOAD_CT_TAGGER: yes
+      OMP_NUM_THREADS: "4"
+      MKL_NUM_THREADS: "4"
+      TOKENIZERS_PARALLELISM: "false"
     depends_on:
       - redis
       - db
@@ -94,17 +101,14 @@ services:
     ulimits:
       stack: 67108864
       memlock: -1
-    # deploy:
-    #   resources:
-    #     reservations:
-    #       devices:
-    #         - driver: nvidia
-    #           capabilities: [gpu]
-              # device: 0
-      # replicas: 1
-    # deploy:
-    #   replicas: 1
-    
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+      replicas: 1
 
 
 volumes:
