@@ -22,7 +22,7 @@ tenacity==8.1.0
 httpx==0.23.3
 debugpy==1.6.7
 imbalanced-learn==0.10
-transformers==4.38.0
+transformers==4.43.3
 nltk==3.8.1
 pandas==2.0.0
 redis==4.5.4
