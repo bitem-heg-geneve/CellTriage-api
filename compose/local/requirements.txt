@@ -23,7 +23,7 @@ debugpy==1.8.14
 imbalanced-learn==0.13.0
 transformers==4.55.2
 nltk==3.10.0
-pandas==3.0.5
+pandas==2.3.3
 redis==8.1.0
 orjson==3.10.18
 asgiref==3.12.1
