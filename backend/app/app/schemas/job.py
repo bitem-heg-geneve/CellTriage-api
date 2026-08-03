@@ -16,26 +16,25 @@ class JobBase(BaseModel):
 
 
 class JobCreate(JobBase):
-    use_fulltext: bool = Field(default=True)
-    article_set: List[ArticleCreate] = Field(
-        example=[
-            # ArticleCreate(pmid=14691011),
-            # ArticleCreate(pmid=25190367),
-            ArticleCreate(pmid=36585756),
-            ArticleCreate(pmid=36564873),
-            ArticleCreate(pmid=35985809),
-            ArticleCreate(pmid=34915666),
-            ArticleCreate(pmid=35183060),
-            ArticleCreate(pmid=10390151),
-            ArticleCreate(pmid=31654625),
-            ArticleCreate(pmid=31678775),
-            ArticleCreate(pmid=31741260),
-            ArticleCreate(pmid=32289117),
-            
-            
-        ],
-        default=[],
-    )
+    use_fulltext: bool = Field(default=False)
+    article_set: List[ArticleCreate] = Field(default=[])
+    
+    class Config:
+        schema_extra = {
+            "example": {
+                "use_fulltext": False,
+                "article_set": [
+                    {"pmid": 41892333},  # HeLa cell line - HIGH score
+                    {"pmid": 41888353},  # CHO cell line - HIGH score
+                    {"pmid": 41890120},  # rhesus iPSCs - HIGH score
+                    {"pmid": 41895740},  # Mouse pancreatic - HIGH score
+                    {"pmid": 41890579},  # Postoperative pain - LOW score
+                    {"pmid": 41888632},  # Smell/taste disorder - LOW score
+                    {"pmid": 41890924},  # Surgical psychology - LOW score
+                    {"pmid": 41888764},  # Malpractice fear - LOW score
+                ]
+            }
+        }
 
 
 class JobUpdate(JobBase):
@@ -73,10 +72,6 @@ class JobInDBBase(JobBase):
         else:
             values["process_time"] = 0.00
         return values
-
-    # @validator("process_time")
-    # def pt_check(cls, v):
-    #     return round(v, 2)
 
 
 # Properties to return to client
