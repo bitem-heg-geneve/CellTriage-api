@@ -81,7 +81,7 @@ services:
       context: .
       dockerfile: ./compose/local/pytorch/Dockerfile
     image: worker_infer
-    command: python -m debugpy --listen 0.0.0.0:5672 -m celery -A app.main.celery worker --loglevel=info -Q infer --hostname=infer@%h --pool=prefork --concurrency=1 
+    command: python -m debugpy --listen 0.0.0.0:5672 -m celery -A app.main.celery worker --loglevel=info -Q infer --hostname=infer@%h --pool=solo 
     volumes:
       - ./backend/app:/app
       - ./model_resources:/model_resources
@@ -101,14 +101,14 @@ services:
     ulimits:
       stack: 67108864
       memlock: -1
-#     deploy:
-#       resources:
-#         reservations:
-#           devices:
-#             - driver: nvidia
-#               count: 1
-#               capabilities: [gpu]
-#       replicas: 1
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+      replicas: 1
 
 
 volumes:

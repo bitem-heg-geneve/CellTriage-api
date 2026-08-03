@@ -4,8 +4,6 @@ from torch.utils.data import Dataset, DataLoader
 import pytorch_lightning as pl
 import pandas as pd
 
-# from torchmetrics import AUROC
-
 from transformers import (
     BertTokenizerFast as BertTokenizer,
     BertModel,
@@ -69,7 +67,6 @@ class CtDataModule(pl.LightningDataModule):
         text_col,
         tokenizer,
         labels,
-        # batch_size=8,
         batch_size=200,
         max_token_len=512,
     ):
@@ -205,7 +202,7 @@ class CtTagger(object):
         self.max_token_count = max_token_count
         self.text_col = text_col
         self.tokenizer = AutoTokenizer.from_pretrained(lm_model_name)
-        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        self.device = torch.device("cpu")  # Force CPU
         self.model = CtModel.load_from_checkpoint(
             chkpt_fp,
             labels=labels,
@@ -214,7 +211,6 @@ class CtTagger(object):
         )
         self.model.eval()
         self.model.freeze()
-        # self.model = self.model.to(self.device)
 
     def __del__(self):
         del self.tokenizer
@@ -230,7 +226,8 @@ class CtTagger(object):
         )
         model = self.model.to(self.device)
         predictions, labels = [], []
-        dataloader = DataLoader(dataset, batch_size=400, num_workers=4)
+        # Increased batch size for better throughput
+        dataloader = DataLoader(dataset, batch_size=1000, num_workers=0)
         for batch in dataloader:
             with torch.no_grad():
                 _, prediction = model(
@@ -244,46 +241,9 @@ class CtTagger(object):
                 torch.cuda.empty_cache()
                 gc.collect()
 
-        # predictions = torch.stack(predictions).detach().cpu()
-        # predictions = torch.stack(predictions)
-        # labels = torch.stack(labels)
         predictions = torch.cat(predictions)
         labels = torch.cat(labels)
         del model
         torch.cuda.empty_cache()
         gc.collect()
         return predictions, labels
-
-        # for item in tqdm(dataset):
-        #     _, prediction = self.model(
-        #         item["input_ids"].unsqueeze(dim=0).to(self.device),
-        #         item["attention_mask"].unsqueeze(dim=0).to(self.device),
-        #     )
-        #     predictions.append(prediction.flatten())
-        #     labels.append(item["labels"].int())
-
-        #     predictions = torch.stack(predictions).detach().cpu()
-        #     labels = torch.stack(labels).detach().cpu()
-        # return predictions, labels
-
-        # predictions, labels = [], []
-        # dataloader = DataLoader(dataset, batch_size=10, num_workers=8)
-        # predictor = pl.Trainer(
-        #     accelerator="auto", enable_checkpointing=False, logger=False
-        # )
-        # predictions = predictor.predict(self.model, dataloaders=dataloader)
-
-        # return predictions, labels
-
-        # predictions, labels = [], []
-        # for item in tqdm(dataset):
-        #     _, prediction = self.model(
-        #         item["input_ids"].unsqueeze(dim=0).to(self.device),
-        #         item["attention_mask"].unsqueeze(dim=0).to(self.device),
-        #     )
-        #     predictions.append(prediction.flatten())
-        #     labels.append(item["labels"].int())
-
-        # predictions = torch.stack(predictions).detach().cpu()
-        # labels = torch.stack(labels).detach().cpu()
-        # return predictions, labels

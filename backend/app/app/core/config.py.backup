@@ -56,15 +56,9 @@ class Settings(BaseSettings):
     CELERY_RESULT_BACKEND: str = os.environ.get(
         "CELERY_RESULT_BACKEND", "redis://127.0.0.1:6379/0"
     )
-    CELERY_BROKER_HEARTBEAT = 0  # Disable heartbeat checks for long-running tasks
-    CELERY_BROKER_CONNECTION_RETRY_ON_STARTUP = True
-    CELERY_BROKER_TRANSPORT_OPTIONS = {"visibility_timeout": 14400}  # 4 hours - longer than task soft_time_limit
-    CELERY_TASK_ACKS_LATE = True  # Only ACK tasks after completion, not on receipt
-    CELERY_WORKER_PREFETCH_MULTIPLIER = 1  # With concurrency=1, dont prefetch multiple tasks
 
     CELERY_TASK_DEFAULT_QUEUE = "default"
 
-    CELERY_BROKER_TRANSPORT_OPTIONS = {"visibility_timeout": 14400}  # 4 hours - longer than task soft_time_limit
     # Force all queues to be explicitly listed in `CELERY_TASK_QUEUES` to help prevent typos
     CELERY_TASK_CREATE_MISSING_QUEUES = False
 
