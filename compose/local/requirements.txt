@@ -24,7 +24,7 @@ imbalanced-learn==0.13.0
 transformers==4.55.2
 nltk==3.10.0
 pandas==2.2.3
-redis==5.2.1
+redis==8.1.0
 orjson==3.10.18
 asgiref==3.8.1
 aiostream==0.4.5
