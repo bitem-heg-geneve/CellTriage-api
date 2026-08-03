@@ -7,10 +7,10 @@ import pandas as pd
 from transformers import (
     BertTokenizerFast as BertTokenizer,
     BertModel,
-    AdamW,
     AutoTokenizer,
     get_linear_schedule_with_warmup,
 )
+from torch.optim import AdamW
 from tqdm.auto import tqdm
 import pytorch_lightning as pl
 import gc

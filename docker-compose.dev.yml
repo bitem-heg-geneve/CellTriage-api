@@ -38,6 +38,7 @@ services:
     container_name: reddis
     restart: always
     cap_drop: [ALL]
+    cap_add: [SETUID, SETGID]
     security_opt:
       - no-new-privileges:true
 
