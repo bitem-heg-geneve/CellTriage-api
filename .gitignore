@@ -1,2 +1,4 @@
 /model_resources
-.gitignore
+.gitignore*.env*
+.env*
+compose/.env.dev
