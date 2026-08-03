@@ -30,5 +30,5 @@ asgiref==3.8.1
 aiostream==0.4.5
 aiohttp==3.10.11
 # torch==2.0.1+cu118
-tqdm==4.67.1
+tqdm==4.70.0
 pytorch-lightning==2.5.1
