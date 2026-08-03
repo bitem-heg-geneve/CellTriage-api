@@ -2,7 +2,7 @@ import torch
 
 from transformers import BertTokenizer, BertForSequenceClassification
 from torch.utils.data import TensorDataset, DataLoader, SequentialSampler
-from transformers.optimization import AdamW
+from torch.optim import AdamW
 from transformers import get_linear_schedule_with_warmup
 import numpy as np
 
