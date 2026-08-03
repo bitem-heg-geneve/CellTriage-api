@@ -3,7 +3,7 @@ SQLAlchemy==2.0.41
 watchfiles==1.2.0
 fastapi==0.116.1
 psycopg2-binary==2.9.10
-alembic==1.16.2
+alembic==1.18.5
 atomicwrites==1.4.1
 attrs==25.3.0
 bcrypt==4.3.0
