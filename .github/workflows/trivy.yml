@@ -10,6 +10,7 @@ on:
       - main
 
   schedule:
+    # Every Monday at 06:00 UTC
     - cron: "0 6 * * 1"
 
 concurrency:
@@ -38,8 +39,8 @@ jobs:
         run: |
           docker build \
             --tag "${IMAGE_REF}" \
-            --file api/Dockerfile.worker \
-            api/
+            --file compose/local/pytorch/Dockerfile \
+            .
 
       - name: Scan Worker image with Trivy
         uses: aquasecurity/trivy-action@ed142fd0673e97e23eac54620cfb913e5ce36c25
@@ -52,7 +53,7 @@ jobs:
           output: trivy-worker.sarif
           limit-severities-for-sarif: "true"
           ignore-unfixed: "true"
-          trivyignores: api/.trivyignore
+          trivyignores: .trivyignore
           exit-code: "1"
           timeout: 15m
 
