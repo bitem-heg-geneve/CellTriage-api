@@ -17,6 +17,7 @@ RUN rm -f /etc/apt/apt.conf.d/docker-clean
 
 RUN --mount=type=cache,target=$PIP_CACHE_DIR \
   apt-get update \
+  && apt-get upgrade -y \
   && apt-get install -yqq --no-install-recommends \
   build-essential \
   libpq-dev \
