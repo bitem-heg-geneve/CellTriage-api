@@ -1,5 +1,5 @@
 # syntax = docker/dockerfile:1.4.3
-FROM python:3.12-slim
+FROM python:3.14-slim
 
 ENV PIP_CACHE_DIR=/var/cache/buildkit/pip
 ENV PYTHONUNBUFFERED=1
