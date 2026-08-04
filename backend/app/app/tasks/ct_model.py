@@ -40,7 +40,7 @@ class CtDataset(Dataset):
         text = data_row[self.text_col]
         labels = data_row[self.labels]
 
-        encoding = self.tokenizer.encode_plus(
+        encoding = self.tokenizer(
             text,
             add_special_tokens=True,
             max_length=self.max_token_len,
