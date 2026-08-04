@@ -23,6 +23,9 @@ RUN --mount=type=cache,target=$PIP_CACHE_DIR \
   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false \
   && rm -rf /var/lib/apt/lists/*
 
+RUN --mount=type=cache,target=$PIP_CACHE_DIR \
+  pip install --upgrade pip setuptools
+
 COPY ./compose/local/requirements.txt /requirements.txt
 RUN --mount=type=cache,target=$PIP_CACHE_DIR \
   pip install --index-url https://download.pytorch.org/whl/cpu torch==2.13.0+cpu && \
