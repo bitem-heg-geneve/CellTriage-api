@@ -9,7 +9,7 @@ attrs==26.1.0
 bcrypt==4.3.0
 certifi==2026.7.22
 cffi==2.1.0
-email-validator==2.2.0
+email-validator==2.3.0
 pydantic==1.10.21
 passlib==1.7.4
 httpx==0.28.1
