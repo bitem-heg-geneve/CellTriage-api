@@ -31,4 +31,4 @@ aiostream==0.4.5
 aiohttp==3.14.3
 # torch==2.0.1+cu118
 tqdm==4.70.0
-pytorch-lightning==2.6.1
+pytorch-lightning==2.6.5
