@@ -1,12 +1,12 @@
 import pathlib
 
-from pydantic import AnyHttpUrl, BaseSettings, EmailStr, validator
+from pydantic import AnyHttpUrl, EmailStr, field_validator
+from pydantic_settings import BaseSettings
 from typing import List, Optional, Union
 from kombu import Queue
 import os
 
 
-# Project Directories
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 
 
@@ -22,23 +22,17 @@ class Settings(BaseSettings):
     JWT_SECRET: str = "TEST_SECRET_DO_NOT_USE_IN_PROD"
     ALGORITHM: str = "HS256"
 
-    # 60 minutes * 24 hours * 8 days = 8 days
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 60 * 24 * 8
 
-    # BACKEND_CORS_ORIGINS is a JSON-formatted list of origins
-    # e.g: '["http://localhost", "http://localhost:4200", "http://localhost:3000", \
-    # "http://localhost:8080", "http://local.dockertoolbox.tiangolo.com"]'
     BACKEND_CORS_ORIGINS: List[AnyHttpUrl] = [
         "http://localhost:3000",
-        "http://localhost:8001",  # type: ignore
+        "http://localhost:8001",
     ]
 
-    # Origins that match this regex OR are in the above list are allowed
-    BACKEND_CORS_ORIGIN_REGEX: Optional[
-        str
-    ] = "https.*\.(netlify.app|herokuapp.com)"  # noqa: W605
+    BACKEND_CORS_ORIGIN_REGEX: Optional[str] = "https.*\\.(netlify.app|herokuapp.com)"
 
-    @validator("BACKEND_CORS_ORIGINS", pre=True)
+    @field_validator("BACKEND_CORS_ORIGINS", mode="before")
+    @classmethod
     def assemble_cors_origins(cls, v: Union[str, List[str]]) -> Union[List[str], str]:
         if isinstance(v, str) and not v.startswith("["):
             return [i.strip() for i in v.split(",")]
@@ -50,35 +44,25 @@ class Settings(BaseSettings):
     FIRST_SUPERUSER: EmailStr = "admin@triagecentral.com"
     FIRST_SUPERUSER_PW: str = "secret"
 
-    CELERY_BROKER_URL: str = os.environ.get(
-        "CELERY_BROKER_URL", "redis://127.0.0.1:6379/0"
-    )
-    CELERY_RESULT_BACKEND: str = os.environ.get(
-        "CELERY_RESULT_BACKEND", "redis://127.0.0.1:6379/0"
-    )
-    CELERY_BROKER_HEARTBEAT = 0  # Disable heartbeat checks for long-running tasks
-    CELERY_BROKER_CONNECTION_RETRY_ON_STARTUP = True
-    CELERY_BROKER_TRANSPORT_OPTIONS = {"visibility_timeout": 14400}  # 4 hours - longer than task soft_time_limit
-    CELERY_TASK_ACKS_LATE = True  # Only ACK tasks after completion, not on receipt
-    CELERY_WORKER_PREFETCH_MULTIPLIER = 1  # With concurrency=1, dont prefetch multiple tasks
-
-    CELERY_TASK_DEFAULT_QUEUE = "default"
-
-    CELERY_BROKER_TRANSPORT_OPTIONS = {"visibility_timeout": 14400}  # 4 hours - longer than task soft_time_limit
-    # Force all queues to be explicitly listed in `CELERY_TASK_QUEUES` to help prevent typos
-    CELERY_TASK_CREATE_MISSING_QUEUES = False
+    CELERY_BROKER_URL: str = os.environ.get("CELERY_BROKER_URL", "redis://127.0.0.1:6379/0")
+    CELERY_RESULT_BACKEND: str = os.environ.get("CELERY_RESULT_BACKEND", "redis://127.0.0.1:6379/0")
+    CELERY_BROKER_HEARTBEAT: int = 0
+    CELERY_BROKER_CONNECTION_RETRY_ON_STARTUP: bool = True
+    CELERY_BROKER_TRANSPORT_OPTIONS: dict = {"visibility_timeout": 14400}
+    CELERY_TASK_ACKS_LATE: bool = True
+    CELERY_WORKER_PREFETCH_MULTIPLIER: int = 1
+    CELERY_TASK_DEFAULT_QUEUE: str = "default"
+    CELERY_TASK_CREATE_MISSING_QUEUES: bool = False
 
     CELERY_TASK_QUEUES: list = (
-        # need to define default queue here or exception would be raised
         Queue("default"),
         Queue("ingress"),
         Queue("infer"),
     )
 
-    CELERY_TASK_ROUTES = (route_task,)
+    CELERY_TASK_ROUTES: tuple = (route_task,)
 
-    class Config:
-        case_sensitive = True
+    model_config = {"case_sensitive": True}
 
 
 settings = Settings()

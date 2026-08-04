@@ -1,4 +1,4 @@
-from pydantic import BaseModel, HttpUrl, validator
+from pydantic import BaseModel, HttpUrl, field_validator
 from typing import Optional, List
 
 from typing import Sequence
@@ -22,23 +22,20 @@ class ArticleUpdate(ArticleBase):
     text: Optional[str] = None
 
 
-# Properties shared by models stored in DB
 class ArticleInDBBase(ArticleBase):
     pmid: int
     score: Optional[float] = None
 
-    class Config:
-        orm_mode = True
+    model_config = {"from_attributes": True}
 
-    @validator("score")
+    @field_validator("score")
+    @classmethod
     def is_check(cls, v):
         if v:
             return round(v, 2)
-        else:
-            return v
+        return v
 
 
-# Properties to return to client
 class Article(ArticleInDBBase):
     pmcid: Optional[str] = None
     entrez_date: Optional[str] = None
@@ -47,6 +44,5 @@ class Article(ArticleInDBBase):
     text: Optional[str] = None
 
 
-# Properties properties stored in DB
 class ArticleInDB(ArticleInDBBase):
     None
