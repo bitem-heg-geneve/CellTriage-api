@@ -20,6 +20,7 @@ gunicorn==23.0.0
 uvicorn==0.35.0
 Jinja2==3.1.6
 kombu==5.6.2
+msgpack==1.2.1
 tenacity==9.1.2
 debugpy==1.8.14
 imbalanced-learn==0.13.0
