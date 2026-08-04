@@ -1,7 +1,7 @@
 celery==5.6.3
 SQLAlchemy==2.0.41
 watchfiles==1.2.0
-fastapi==0.116.1
+fastapi==0.141.1
 psycopg2-binary==2.9.12
 alembic==1.18.5
 atomicwrites==1.4.1
