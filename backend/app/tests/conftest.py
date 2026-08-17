@@ -1,4 +1,10 @@
+import os
 import pytest
+
+# Must be set before app modules are imported so session.py sees it
+os.environ.setdefault('DATABASE_URL', 'sqlite:///./test.db')
+os.environ.setdefault('SECRET_KEY', 'test-secret-key')
+
 from fastapi.testclient import TestClient
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
@@ -27,3 +33,5 @@ def client():
         yield c
     app.dependency_overrides.clear()
     Base.metadata.drop_all(bind=engine)
+    if os.path.exists('./test.db'):
+        os.remove('./test.db')
