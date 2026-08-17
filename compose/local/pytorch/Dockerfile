@@ -5,6 +5,8 @@ ENV PYTHONUNBUFFERED=1
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV UV_NO_CACHE=1
 ENV UV_FROZEN=1
+ENV UV_PROJECT_ENVIRONMENT=/venv
+ENV PATH=/venv/bin:$PATH
 
 # Create user
 ARG USERNAME=appuser
@@ -23,16 +25,18 @@ RUN apt-get update \
 
 COPY --from=ghcr.io/astral-sh/uv:0.12.5 /uv /usr/local/bin/uv
 
-COPY ./compose/local/pyproject.toml ./compose/local/uv.lock /app/
-WORKDIR /app
+COPY ./compose/local/pyproject.toml ./compose/local/uv.lock /build/
+WORKDIR /build
 RUN uv sync --no-install-project
 
 COPY ./compose/local/entrypoint /entrypoint
 RUN sed -i 's/\r$//g' /entrypoint
 RUN chmod +x /entrypoint
 
+WORKDIR /app
+
 USER $USERNAME
 
-RUN uv run python -m nltk.downloader punkt
+RUN python -m nltk.downloader punkt
 
 ENTRYPOINT ["/entrypoint"]
