@@ -1,9 +1,11 @@
 import os
 import pytest
 
-# Must be set before app modules are imported so session.py sees it
+# Set all env vars required at module import time before importing app
 os.environ.setdefault('DATABASE_URL', 'sqlite:///./test.db')
 os.environ.setdefault('SECRET_KEY', 'test-secret-key')
+os.environ.setdefault('MAX_INGRESS_CONCURRENCY', '4')
+os.environ.setdefault('SIBILS_URL', 'https://sibils.text-analytics.ch/api/')
 
 from fastapi.testclient import TestClient
 from sqlalchemy import create_engine
