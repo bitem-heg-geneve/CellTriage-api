@@ -1,5 +1,5 @@
 celery==5.6.3
-SQLAlchemy==2.0.51
+SQLAlchemy==2.0.52
 watchfiles==1.2.0
 fastapi==0.141.1
 starlette==1.6.0
