@@ -30,7 +30,7 @@ dependencies = [
     "debugpy==1.8.14",
     "imbalanced-learn==0.14.2",
     "transformers==5.14.1",
-    "nltk==3.10.2",
+    "nltk==3.10.3",
     "pandas==2.3.3",
     "redis==8.1.0",
     "orjson==3.11.9",
