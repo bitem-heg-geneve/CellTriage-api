@@ -2,6 +2,7 @@ import asyncio
 from typing import Any, Optional
 
 from fastapi import APIRouter, Depends, HTTPException, Query
+from fastapi.responses import JSONResponse
 from sqlalchemy.orm import Session
 from app import crud
 from app.api import deps
@@ -97,7 +98,6 @@ def job_status(
     "/{job_id}",
     status_code=200,
     response_model=Job,
-    response_model_exclude_none=True,
 )
 def job_details(
     *,
@@ -107,14 +107,19 @@ def job_details(
 ) -> Any:
     """
     Retrieve job by ID\n
-    Optionally includes text
+    Optionally includes text.\n
+    A score is only ever produced from text the service actually fetched. An article without a score has
+    `score: null` and `error` saying why: missing (SIBiLS did not return the PMID), empty (record without
+    title and abstract), fetch_error (SIBiLS unreachable after retries) or no_prediction (the model gave no
+    usable score). Job `status` is done when every article is scored, partial when some are not, failed when
+    none is or when more than half of a job of 20 or more articles has no text (`error: "sibils_fetch"`).
     """
     job = crud.job.get(db=db, id=job_id)
     if not job:
         raise HTTPException(status_code=404, detail=f"Job with ID {job_id} not found")
 
-    if not include_text:
-        for article in job.article_set:
-            article.text = None
-
-    return job
+    # Serialised by hand so that `score: null` and `error` are always present
+    # (response_model_exclude_none would drop them) while `text` is only sent on request.
+    out = Job.model_validate(job)
+    exclude = None if include_text else {"article_set": {"__all__": {"text"}}}
+    return JSONResponse(out.model_dump(mode="json", exclude=exclude))

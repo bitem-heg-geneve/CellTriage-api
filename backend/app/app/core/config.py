@@ -6,6 +6,8 @@ from typing import List, Optional, Union
 from kombu import Queue
 import os
 
+from app.services.sibils_api import sibils_base_url
+
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 
@@ -62,7 +64,20 @@ class Settings(BaseSettings):
 
     CELERY_TASK_ROUTES: tuple = (route_task,)
 
+    # Shared triage guard (2026-11-10). SIBILS_URL is required, no default on
+    # purpose: the text source is part of the deployment, like the model. Base
+    # URL, http(s); a trailing slash is tolerated and stripped (the client
+    # appends /fetch). Checked below, because pydantic does not validate defaults.
+    SIBILS_URL: str = ""
+    SIBILS_TIMEOUT: int = 30   # seconds, connect and read, per request
+    SIBILS_RETRIES: int = 5    # attempts per batch (backoff 2 s -> 30 s) before fetch_error
+    # app.readiness: minimum score of the positive control; 0 skips the SIBiLS
+    # fetch part of the gate (offline development only).
+    CELLTRIAGE_READINESS_MIN: float = 0.6
+    CELLTRIAGE_READINESS_FETCH: bool = True
+
     model_config = {"case_sensitive": True}
 
 
 settings = Settings()
+settings.SIBILS_URL = sibils_base_url(settings.SIBILS_URL)

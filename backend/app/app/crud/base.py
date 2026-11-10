@@ -37,13 +37,16 @@ class CRUDBase(Generic[ModelType, CreateSchemaType, UpdateSchemaType]):
         db_obj: ModelType,
         obj_in: Union[UpdateSchemaType, Dict[str, Any]],
     ) -> ModelType:
-        obj_data = jsonable_encoder(db_obj)
         if isinstance(obj_in, dict):
             update_data = obj_in
         else:
             update_data = obj_in.model_dump(exclude_unset=True)
-        for field in obj_data:
-            if field in update_data:
+        # Iterate the payload, not jsonable_encoder(db_obj): that is the instance
+        # __dict__, which is empty for an object expired by a previous commit, and
+        # the update then silently did nothing (seen for every article but the
+        # first when scoring a job).
+        for field in update_data:
+            if hasattr(self.model, field):
                 setattr(db_obj, field, update_data[field])
         db.add(db_obj)
         db.commit()

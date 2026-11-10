@@ -39,14 +39,28 @@ class JobCreate(JobBase):
 
 class JobUpdate(JobBase):
     status: Optional[str] = None
+    error: Optional[str] = None
     process_start_at: Optional[datetime] = None
     process_end_at: Optional[datetime] = None
+    sibils_version: Optional[str] = None
+    collection_version: Optional[str] = None
+    sibils_warning: Optional[str] = None
 
 
 class JobInDBBase(JobBase):
     id: int
     use_fulltext: bool = Field(default=True)
+    # pending | in progress | done | partial | failed (shared triage guard, §3)
     status: str = Field(default="pending")
+    error: Optional[str] = None  # sibils_fetch | no_prediction when failed
+    n_submitted: int = 0
+    n_scored: int = 0
+    n_no_text: int = 0
+    n_fetch_error: int = 0
+    n_no_prediction: int = 0
+    sibils_version: Optional[str] = None
+    collection_version: Optional[str] = None
+    sibils_warning: Optional[str] = None
     job_created_at: datetime = Field(default_factory=datetime.now)
     process_start_at: Optional[datetime] = None
     process_end_at: Optional[datetime] = None

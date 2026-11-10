@@ -11,6 +11,7 @@ from app import crud
 from sqlalchemy.orm import Session
 from app.api import deps
 from app.db.session import SessionLocal
+from app.services.job_summary import STATUS_FAILED, article_row, summarize
 # from app.schemas import Source
 # from app.schemas import Article
 
@@ -48,9 +49,19 @@ def job_process_start(self, job_id):
 def job_process_end(self, job_id):
     db = SessionLocal()
     job = crud.job.get(db=db, id=job_id)
-    job_update = JobUpdate(status="done", process_end_at=datetime.now())
+    # Shared triage guard §3: the final status says what the articles say:
+    # done (all scored), partial (some not), failed (none, or an endpoint problem).
+    summary = summarize((article_row(a) for a in job.article_set), final=True)
+    job_update = JobUpdate(status=summary.status, error=summary.error, process_end_at=datetime.now())
     crud.job.update(db=db, db_obj=job, obj_in=job_update)
-    logger.info(f"Process_job_end, job_id:{job.id}")
+    logger.info(
+        "Process_job_end, job_id:%s status=%s n_submitted=%d n_scored=%d n_no_text=%d "
+        "n_fetch_error=%d n_no_prediction=%d error=%s",
+        job.id, summary.status, summary.n_submitted, summary.n_scored, summary.n_no_text,
+        summary.n_fetch_error, summary.n_no_prediction, summary.error,
+    )
+    if summary.status == STATUS_FAILED:
+        logger.error("job %s failed: %s (%s)", job.id, summary.error, job.sibils_warning)
 
     db.close()
     return job_id
