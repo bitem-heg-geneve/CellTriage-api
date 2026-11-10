@@ -9,6 +9,8 @@ n_fetch_error / n_no_prediction and of the job status:
 - failed      none is scored, or no-text + fetch-error exceed FAILED_NO_TEXT_SHARE
               of a job of at least FAILED_MIN_ARTICLES (an endpoint or collection
               problem, not a few odd PMIDs); `error` says which;
+- failed      also when a finished job of DEGENERATE_MIN_SCORED+ articles has one single
+              score value (all 0.0, all 0.5: a wrong model), `error: degenerate_scores`;
 - pending / in progress   not every article has an outcome yet.
 
 Ported from DisTriage's services/job_summary.py (be2f802); CellTriage has no
@@ -18,7 +20,7 @@ score and error alone.
 
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from typing import Iterable, Optional, Tuple
 
 TEXT_OK = "ok"
@@ -35,6 +37,8 @@ STATUS_FAILED = "failed"
 
 FAILED_NO_TEXT_SHARE = 0.5
 FAILED_MIN_ARTICLES = 20
+DEGENERATE_SCORES = "degenerate_scores"
+DEGENERATE_MIN_SCORED = 100  # scores are rounded to 2 decimals, so a small batch may honestly be all 0.00
 
 Row = Tuple[Optional[str], Optional[float], Optional[str]]
 
@@ -61,6 +65,22 @@ def legacy_text_status(text_status: Optional[str], text: Optional[str]) -> str:
 def article_row(article) -> Row:
     """The triple `summarize` needs, from an ORM Article (or anything with the attributes)."""
     return (article.text_status, article.score, article.error)
+
+
+def degenerate_scores(scores: Iterable[Optional[float]]) -> bool:
+    """A real model never gives DEGENERATE_MIN_SCORED articles the same score.
+
+    All 0.0 (CellTriage, 25 Oct-8 Nov 2026), all 0.5, all identical: that is a
+    wrong or degraded model, not a batch of equally relevant papers."""
+    vals = [float(s) for s in scores if s is not None]
+    return len(vals) >= DEGENERATE_MIN_SCORED and max(vals) == min(vals)
+
+
+def with_degenerate_check(summary: "JobSummary", scores: Iterable[Optional[float]]) -> "JobSummary":
+    """A done/partial job whose scores are one single value becomes failed (error degenerate_scores)."""
+    if summary.status in (STATUS_DONE, STATUS_PARTIAL) and degenerate_scores(scores):
+        return replace(summary, status=STATUS_FAILED, error=DEGENERATE_SCORES)
+    return summary
 
 
 def summarize(rows: Iterable[Row], final: bool = False) -> JobSummary:

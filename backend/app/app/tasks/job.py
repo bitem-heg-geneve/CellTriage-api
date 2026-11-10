@@ -11,7 +11,7 @@ from app import crud
 from sqlalchemy.orm import Session
 from app.api import deps
 from app.db.session import SessionLocal
-from app.services.job_summary import STATUS_FAILED, article_row, summarize
+from app.services.job_summary import STATUS_FAILED, article_row, summarize, with_degenerate_check
 # from app.schemas import Source
 # from app.schemas import Article
 
@@ -52,6 +52,8 @@ def job_process_end(self, job_id):
     # Shared triage guard §3: the final status says what the articles say:
     # done (all scored), partial (some not), failed (none, or an endpoint problem).
     summary = summarize((article_row(a) for a in job.article_set), final=True)
+    # Shared guard: a finished job whose scores are all one value is a broken model, not a result.
+    summary = with_degenerate_check(summary, (a.score for a in job.article_set))
     job_update = JobUpdate(status=summary.status, error=summary.error, process_end_at=datetime.now())
     crud.job.update(db=db, db_obj=job, obj_in=job_update)
     logger.info(

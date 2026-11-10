@@ -98,6 +98,9 @@ Per job:
 | `n_submitted`, `n_scored`, `n_no_text` (missing + empty), `n_fetch_error`, `n_no_prediction` | Counts over the articles |
 | `sibils_version`, `collection_version`, `sibils_warning` | What the SIBiLS instance answered for this job (`sibils_warning` holds its `missing ids:…` text, or the fetch error) |
 
+A finished job whose scores are all one single value over 100 or more articles (all `0.0`,
+all `0.5`) is `failed` with `error: "degenerate_scores"`: a wrong or degraded model, never a result.
+
 A client should rank on `score` where it is not `null`, and skip or re-submit
 the others; a `failed` job should not be published.
 

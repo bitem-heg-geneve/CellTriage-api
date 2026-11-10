@@ -180,3 +180,18 @@ def test_legacy_rows_without_text_status():
     assert legacy_text_status(None, "") == TEXT_MISSING
     assert legacy_text_status(None, None) == TEXT_MISSING
     assert legacy_text_status(TEXT_EMPTY, "ignored") == TEXT_EMPTY
+
+
+def test_degenerate_scores_fail_a_finished_job():
+    from app.services.job_summary import (DEGENERATE_MIN_SCORED, DEGENERATE_SCORES, JobSummary,
+                                          degenerate_scores, with_degenerate_check)
+    n = DEGENERATE_MIN_SCORED
+    done = JobSummary(n, n, 0, 0, 0, 0, "done", None)
+    assert degenerate_scores([0.0] * n) and degenerate_scores([0.5] * n)
+    assert not degenerate_scores([0.0] * (n - 1))            # too few to judge
+    assert not degenerate_scores([0.0] * (n - 1) + [0.01])   # one different value is enough
+    out = with_degenerate_check(done, [0.0] * n)
+    assert out.status == "failed" and out.error == DEGENERATE_SCORES and out.n_scored == n
+    assert with_degenerate_check(done, [i / n for i in range(n)]) == done
+    running = JobSummary(n, 0, 0, 0, 0, n, "in progress", None)
+    assert with_degenerate_check(running, [0.0] * n) == running
